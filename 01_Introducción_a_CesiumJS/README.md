@@ -17,9 +17,13 @@ Características de CesiumJS
 5. Visualización dinámica de tiempo.
 6. Vistas 3D, 2.5D y 2D.
 
+**Ejemplos de uso en CesiumJS**: https://sandcastle.cesium.com/
+
 ## **2. Configuración del Entorno de Desarrollo**
 
-## Formas de usar CesiumJS:
+## Formas de usar CesiumJS:  
+
+Doc: https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/
 
 1. **Instalación a través de npm (Node Package Manager):**
     
@@ -33,7 +37,7 @@ Características de CesiumJS
      <script src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
      <link href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
     ```
-    
+[Ejemplo HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/examples/01_introduction/01-cdn-example.html)
 
 ## Entornos de Desarrollo:
 
