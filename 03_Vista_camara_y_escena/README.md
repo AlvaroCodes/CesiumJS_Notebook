@@ -8,7 +8,11 @@ Se refiere a la forma en que se muestra el globo terrestre y los objetos geoespa
 ## Cámara (Camera): 
 Define la posición, orientación y campo de visión del observador virtual dentro del mundo 3D. Puedes controlar la cámara para cambiar la perspectiva del usuario sobre el globo terrestre o cualquier otro objeto en la escena. Puedes ajustar la posición y orientación de la cámara programáticamente para enfocarte en áreas específicas del globo o para seguir objetos en movimiento.  
 
-📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/Camera.html  
+📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/Camera.html   
+
+🔩 Ejemplos:  
+▶️ [Manejo de la cámara con el teclado](https://sandcastle.cesium.com/?src=Camera%20Tutorial.html&label=All)  
+▶️ [Opciones vuelos cámara](https://sandcastle.cesium.com/?src=Camera.html&label=All)
 
 
 ## Escena (Scene):
