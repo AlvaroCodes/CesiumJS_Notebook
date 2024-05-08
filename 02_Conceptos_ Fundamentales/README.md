@@ -1,7 +1,6 @@
 # Conteptos Fundamentales
 
 # 1. Coordenadas, sistemas de referencia y proyecciones.
-wiew.scene (proyecciones)
 * **Coordenadas:**
 Par de valores numéricos que representan la ubicación de un punto en la superficie de la Tierra. Estos valores, comúnmente expresados en grados decimales de latitud y longitud (cartográficas). En el caso de **CesiumJS** podemos entrar:
   * **Cartesianas**  
@@ -22,8 +21,11 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
    const cat2 = new Certesian2(x, y)
    ```
 * **Proyecciones y Sistema de referencia:**
-  * [GeographicProjection](https://cesium.com/learn/ion-sdk/ref-doc/GeographicProjection.html) - EPSG:3857.
-  * [WebMercatorProjection](https://cesium.com/learn/ion-sdk/ref-doc/WebMercatorProjection.html) - EPSG:4326.
+  * [WebMercatorProjection | EPSG:4326](https://cesium.com/learn/ion-sdk/ref-doc/WebMercatorProjection.html). Esta proyección es el estándar para representar coordenadas geográficas (latitud y longitud), es una proyección cilíndrica, tiene la capacidad para representar áreas extensas de la Tierra con distorsión mínima.   
+    EPSG:4326 representa las coordenadas geográficas en grados decimales de latitud y longitud, donde la latitud varía entre -90 y 90 grados y la longitud entre -180 y 180 grados.
+    
+  * [GeographicProjection | EPSG:3857](https://cesium.com/learn/ion-sdk/ref-doc/GeographicProjection.html).  Convierte las coordenadas geográficas en pares de coordenadas planas X e Y en metros, capacidad para representar grandes áreas con precisión pero puede introducir distorsiones en áreas cercanas a los polos.
+
     
     <br/>
    ```JavaScript
