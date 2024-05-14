@@ -1,4 +1,5 @@
 # Coordenadas, sistemas de referencia y proyecciones.
+![scheme](./coord.png)
 
 ## 🧭 Coordenadas
 Par de valores numéricos que representan la ubicación de un punto en la superficie de la Tierra. Estos valores, comúnmente expresados en grados decimales de latitud y longitud (cartográficas). En el caso de **CesiumJS** podemos entrar:
