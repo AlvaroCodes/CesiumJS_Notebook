@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <style type="text/css">
+        #map {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
+    <script type="text/javascript">
+
+        const viewer = new Cesium.Viewer("map");
+
+        const osmProvider = new Cesium.OpenStreetMapImageryProvider({
+            url : 'https://tile.openstreetmap.org/'
+        });
+        viewer.imageryLayers.addImageryProvider(osmProvider);
+
+    </script>
+</body>
+
+</html>

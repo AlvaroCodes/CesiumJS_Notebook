@@ -16,6 +16,9 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 
 [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/OpenStreetMapImageryProvider.html)
 
+**Ejemplos:**  
+▶️ [openstreetmap](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/03_OpenStreetMapImageryProvider.html)  
+
 ## TileMapServiceImageryProvider | TMS - XYZ
 [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileMapServiceImageryProvider.html)
 
