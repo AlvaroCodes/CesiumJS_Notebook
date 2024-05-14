@@ -2,7 +2,18 @@
 
 ![scheme](./scheme.png)
 
-## OpenStreetMapImageryProvider  | OSM
+## OpenStreetMapImageryProvider  | OSM  
+Proporciona imágenes en mosaico alojadas en OpenStreetMap, por defecto "https://tile.openstreetmap.org/".
+```javascript
+const viewer = new Cesium.Viewer("map");
+
+const osmProvider = new Cesium.OpenStreetMapImageryProvider({
+  url : 'https://tile.openstreetmap.org/'
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider);
+```
+
 [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/OpenStreetMapImageryProvider.html)
 
 ## TileMapServiceImageryProvider | TMS - XYZ
