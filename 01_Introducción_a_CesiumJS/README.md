@@ -1,6 +1,6 @@
 # Introducción a CesiumJS
 
-# 1. Introducción a CesiumJS
+# ⭐ 1. Introducción a CesiumJS
 
 CesiumJS es una biblioteca JavaScript de código abierto que se utiliza para crear aplicaciones web de mapas 3D interactivos y visualizaciones geoespaciales.
 
@@ -35,7 +35,9 @@ Características de CesiumJS
 
 ⚠️ Se recomienda poner en el head para evitar errores.  
   
-ℹ️ Para desarrollar en chrome se necesita levantar un servidor. Para VSC - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+ℹ️ Para desarrollar en chrome se necesita levantar un servidor. Para VSC - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).  
+[⁉️ Error Foro](https://community.cesium.com/t/cesium-js-error-from-chrome/14550)  
+[⁉️ Error Origin Null](https://stackoverflow.com/questions/8456538/origin-null-is-not-allowed-by-access-control-allow-origin)  
 
 ℹ️ En Firefox funciona en el protocolo file://
 
