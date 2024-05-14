@@ -33,7 +33,8 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 ▶️ [mierune + credit](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/02_UrlTemplateImageryProvider.html)
 
 ## SingleTileImageryProvider | WMS - WMTS  
-Proporciona un único mosaico de imágenes (WGS84 / EPSG:4326).
+Proporciona un único mosaico de imágenes (WGS84 / EPSG:4326).  
+
 [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/SingleTileImageryProvider.html)  
 
 **Ejemplos:**  
