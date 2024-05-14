@@ -8,7 +8,7 @@ CesiumJS es una biblioteca JavaScript de código abierto que se utiliza para cre
 
 **Cesium ion:** es una platadorma en la nube para almacenar datos. Podemos añadir nubes de puntos, edificios 3D, …
 
-Características de CesiumJS
+**Características de CesiumJS:**
 
 1. Teselas 3D. 
 2. Modelos 3D.
