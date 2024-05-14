@@ -23,4 +23,4 @@ Define la posición, orientación y campo de visión del observador virtual dent
 ## ⛰️ Escena (Scene):
 Es el lienzo en el que se renderizan todos los elementos gráficos, como el globo terrestre, los modelos 3D, ...  
 
-📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene
+[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene)
