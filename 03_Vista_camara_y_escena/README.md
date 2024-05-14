@@ -12,7 +12,10 @@ Define la posición, orientación y campo de visión del observador virtual dent
 
 📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/Camera.html   
 
-**Ejemplos:**    
+**Ejemplos:**  
+▶️ [Control del Zoom](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/01_Zoom.html)  
+
+**Ejemplos Cesium:**    
 ▶️ [Manejo de la cámara con el teclado](https://sandcastle.cesium.com/?src=Camera%20Tutorial.html&label=All)  
 ▶️ [Opciones vuelos cámara](https://sandcastle.cesium.com/?src=Camera.html&label=All)
 
