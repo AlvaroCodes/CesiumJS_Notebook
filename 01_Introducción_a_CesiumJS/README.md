@@ -6,7 +6,7 @@ CesiumJS es una biblioteca JavaScript de código abierto que se utiliza para cre
 
  **3D Tiles:** Cesium creó la especificación 3D Tiles, ahora un estandar de la OGC.
 
-**Cesium ion:** es una platadorma en la nube para almacenar datos. Podemos añadir nubes de puntos, edificios 3D, …
+**Cesium ion:** es una plataforma en la nube para almacenar datos. Podemos añadir nubes de puntos, edificios 3D, …
 
 **Características de CesiumJS:**
 
