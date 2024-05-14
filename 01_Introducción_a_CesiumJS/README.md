@@ -23,7 +23,7 @@ Características de CesiumJS
 
 ## Formas de usar CesiumJS:  
 
-📘 Doc: https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/
+[📘 Doc](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/)
 
 1. **Instalación a través de npm (Node Package Manager):**
     
@@ -32,7 +32,13 @@ Características de CesiumJS
     ```
     
 2. **Uso de CDN (Content Delivery Network):**
-    
+
+⚠️ Se recomienda poner en el head para evitar errores.  
+  
+ℹ️ Para desarrollar en chrome se necesita levantar un servidor. Para VSC - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+ℹ️ En Firefox funciona en el protocolo file://
+
     ```html
      <script src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
      <link href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
@@ -40,19 +46,11 @@ Características de CesiumJS
 [Ejemplo HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/examples/01_introduction/01-cdn-example.html)
 
 ## Entornos de Desarrollo:
+⚠️ Se recomienda utilizar el CDN en vez de npm, problema con workers.
 
-### Webpack:
+| Webpack      | Vite        |
+|--------------|-------------|
+| [📘 Doc](https://cesium.com/learn/cesiumjs-learn/cesiumjs-webpack/) <br/> [🗃️ Repositorio](https://github.com/CesiumGS/cesium-webpack-example/tree/main) | [🗃️ Repositorio](https://github.com/dayjournal/cesium-starter)  |
 
-**Explicación:**
 
-[https://cesium.com/learn/cesiumjs-learn/cesiumjs-webpack/](https://cesium.com/learn/cesiumjs-learn/cesiumjs-webpack/)
 
-**Repositorio:**
-
-[https://github.com/CesiumGS/cesium-webpack-example/tree/main](https://github.com/CesiumGS/cesium-webpack-example/tree/main)
-
-### Vite:
-
-**Repositorio:**
-
-[https://github.com/dayjournal/cesium-starter](https://github.com/dayjournal/cesium-starter)
