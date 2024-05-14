@@ -3,7 +3,9 @@
 ## 🧭 Coordenadas
 Par de valores numéricos que representan la ubicación de un punto en la superficie de la Tierra. Estos valores, comúnmente expresados en grados decimales de latitud y longitud (cartográficas). En el caso de **CesiumJS** podemos entrar:
   * **Cartesianas**  
-    Normalmente se expresan en latitud y longitud, que son medidas angulares con respecto al ecuador y el meridiano de Greenwich, respectivamente.   
+    Las coordenadas cartesianas se utilizan para representar puntos en un espacio bidimensional o tridimensional.
+    Se representan como (x, y) para coordenadas 2D o (x, y, z) para coordenadas 3D.
+  
 
     * **Cartesian2**: Un punto en coordenadas cartesianas en 2D (x,y).  
       [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Cartesian2.html)
@@ -15,8 +17,8 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
       La **"W"** representa el tiempo, un momento específico en el tiempo.  
       [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Cartesian4.html)
   * **Cartográficas**   
-    Las coordenadas cartesianas se utilizan para representar puntos en un espacio bidimensional o tridimensional.
-    Se representan como (x, y) para coordenadas 2D o (x, y, z) para coordenadas 3D.
+   Normalmente se expresan en latitud y longitud, que son medidas angulares con respecto al ecuador y el meridiano de Greenwich, respectivamente.
+
     * **Cartographic**: Las coordenadas son definidas por la longitud, latitud y la altura (longitude, latitude, height).  
       [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Cartographic.html)  
       
