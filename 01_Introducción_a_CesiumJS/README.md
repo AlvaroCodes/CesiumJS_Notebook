@@ -45,7 +45,7 @@ Características de CesiumJS
      <script src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
      <link href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
     ```
-[Ejemplo HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducción_a_CesiumJS/01_introduction/01-cdn-example.html)
+[Ejemplo HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/01-cdn-example.html)
 
 ## Entornos de Desarrollo:
 ⚠️ Se recomienda utilizar el CDN en vez de npm, problema con workers.
