@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="cnig" content="yes">
+   <title>Visor base</title>
+   <link type="text/css" rel="stylesheet"
+      href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css">
+   <script type="text/javascript"
+      src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
+   <style type="text/css">
+      html,
+      body {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         overflow: hidden;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="cesiumContainer"></div>
+   <script type="text/javascript">
+      // Mapa 
+      const viewer = new Cesium.Viewer('cesiumContainer', {
+         animation: false,
+         baseLayerPicker: false,
+         fullscreenButton: false,
+         vrButton: false,
+         geocoder: false,
+         homeButton: false,
+         sceneModePicker: false,
+         timeline: false,
+         navigationHelpButton: false,
+      });
+
+      // Coordenadas para Madrid, España
+      const center = Cesium.Cartesian3.fromDegrees(-3.7037902, 40.4167754);
+      const radius = 10000.0; // radio en metros
+
+      /*
+      La clase Cesium.BoundingSphere define una esfera que se utiliza para 
+      determinar qué parte de la escena es visible.
+
+      📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/BoundingSphere.html
+      */
+      const boundingSphere = new Cesium.BoundingSphere(center, radius);
+
+      /*
+      Establecer la vista de la cámara para que se centre en la esfera de límites
+
+      📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#viewBoundingSphere
+      */
+      viewer.camera.viewBoundingSphere(boundingSphere);
+      // viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
+
+      /* 
+      // Añdir esfera para visualizar el límite
+      viewer.entities.add({
+         position: center,
+         ellipsoid: {
+            radii: new Cesium.Cartesian3(radius, radius, radius),
+            material: Cesium.Color.RED.withAlpha(0.5),
+         },
+      });
+      */
+   </script>
+</body>
+
+</html>
