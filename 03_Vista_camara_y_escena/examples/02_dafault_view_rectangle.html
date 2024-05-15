@@ -38,22 +38,14 @@
          navigationHelpButton: false,
       });
 
-      function getZoom() {
-         // Obtener el nivel de zoom
-         console.log(viewer.camera.positionCartographic.height);
-      }
+      // Cesium.Camera.DEFAULT_VIEW_RECTANGLE
+      // https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#.DEFAULT_VIEW_RECTANGLE
+      /*
+      La propiedad Cesium.Camera.DEFAULT_VIEW_RECTANGLE es una propiedad estática que define el rectángulo
+       de vista predeterminado para la cámara. Propiedad solo de lectura.
+      */
 
-      function setZoomIn(zoom) {
-         // Cambiar nivel de zoom: Si no se pasa ningún valor por defecto viewer.camera.defaultZoomAmount (100000.0) 
-         // https://cesium.com/learn/cesiumjs/ref-doc/Camera.html?classFilter=camera#zoomIn
-         viewer.camera.zoomIn(zoom);
-      }
-
-      function setZoomOut(zoom) {
-         // Cambiar nivel de zoom: Si no se pasa ningún valor por defecto viewer.camera.defaultZoomAmount (100000.0) 
-         // https://cesium.com/learn/cesiumjs/ref-doc/Camera.html?classFilter=camera#zoomOut
-         viewer.camera.zoomOut(zoom);
-      }
+      console.log(Cesium.Camera.DEFAULT_VIEW_RECTANGLE);
    </script>
 </body>
 

@@ -12,7 +12,21 @@ Define la posición, orientación y campo de visión del observador virtual dent
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html)   
 
-**Ejemplos:**  
+<details>
+  <summary>Opciones por defecto</summary>
+
+  * Cesium.Camera.DEFAULT_OFFSET  
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#.DEFAULT_OFFSET)  
+
+  *  Cesium.Camera.DEFAULT_VIEW_FACTOR  
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#.DEFAULT_OFFSET)  
+
+  *  Cesium.Camera.DEFAULT_VIEW_RECTANGLE  
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#.DEFAULT_OFFSET) || [📂 Ejemplo]()
+</details>    
+<br/>
+
+**📂 Ejemplos:**  
 ▶️ [Control del Zoom](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/01_Zoom.html)  
 
 **Ejemplos Cesium:**    
