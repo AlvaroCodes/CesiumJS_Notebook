@@ -1,11 +1,13 @@
-![scheme](./scheme.png)
+# 3. Vista, cámara y escena
 
-## 🌐 Vista (View): 
+->![scheme](./scheme.png)
+
+## 3.1. 🌐 Vista (View): 
 Se refiere a la forma en que se muestra el globo terrestre y los objetos geoespaciales en la pantalla. Puede haber diferentes tipos de vistas, como la vista en perspectiva (3D) o la vista en ortografía (2D). La vista se configura a través del objeto Viewer o CesiumWidget, que proporciona métodos para cambiar entre diferentes vistas, como la vista 3D, 2D o en primer plano.  
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Viewer.html?classFilter=view)
 
-##  📷 Cámara (Camera): 
+## 3.2. 📷 Cámara (Camera): 
 Define la posición, orientación y campo de visión del observador virtual dentro del mundo 3D. Puedes controlar la cámara para cambiar la perspectiva del usuario sobre el globo terrestre o cualquier otro objeto en la escena. Puedes ajustar la posición y orientación de la cámara programáticamente para enfocarte en áreas específicas del globo o para seguir objetos en movimiento.  
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html)   
@@ -63,13 +65,12 @@ function setZoomOut(zoom) {
 ▶️ [Opciones vuelos cámara](https://sandcastle.cesium.com/?src=Camera.html&label=All)
 
 
-## ⛰️ Escena (Scene):
+## 3.3. ⛰️ Escena (Scene):
 Es el lienzo en el que se renderizan todos los elementos gráficos, como el globo terrestre, los modelos 3D, ...  
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene)
 
-### Elementos de la escena:
-### 🌎 El globo (globe) 
+### 3.3.1. 🌎 El globo (globe) 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)  
 
 **Opciones del globo - Límitar extensión**
@@ -122,7 +123,7 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)
 </details> 
 
-### 🗺️ Proyecciones (mapProjection) 
+### 3.3.2. 🗺️ Proyecciones (mapProjection) 
 [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapProjection.html)  
 
 Cesium solo permite dos tipos de proyecciones/sistemas de referencia, WebMercatorProjection (EPSG:4326) y GeographicProjection(EPSG:3857).   
