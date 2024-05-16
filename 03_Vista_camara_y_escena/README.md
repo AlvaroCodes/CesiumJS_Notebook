@@ -69,7 +69,9 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene)
 
 ### Elementos de la escena:
-### 🌎 El globo (globe) [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)
+### 🌎 El globo (globe) 
+[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)  
+
 **Opciones del globo - Límitar extensión**
 <details>
   <summary>cartographicLimitRectangle</summary>
@@ -120,7 +122,9 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)
 </details> 
 
-### 🗺️ Proyecciones (mapProjection) [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapProjection.html)
+### 🗺️ Proyecciones (mapProjection) 
+[📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapProjection.html)  
+
 Cesium solo permite dos tipos de proyecciones/sistemas de referencia, WebMercatorProjection (EPSG:4326) y GeographicProjection(EPSG:3857).   
 
 Por defecto utiliza una proyección basada en el sistema de coordenadas geográficas (WGS84) que corresponde al código EPSG:4326.  
