@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="cnig" content="yes">
+    <title>Visor base</title>
+    <link type="text/css" rel="stylesheet"
+        href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css">
+    <script type="text/javascript"
+        src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cesiumContainer"></div>
+    <script type="text/javascript">
+        // Mapa 
+        const viewer = new Cesium.Viewer('cesiumContainer', {
+            animation: false,
+            baseLayerPicker: false,
+            fullscreenButton: false,
+            vrButton: false,
+            geocoder: false,
+            homeButton: false,
+            sceneModePicker: false,
+            timeline: false,
+            navigationHelpButton: false,
+        });
+
+        // Crear un OrientedBoundingBox
+        const center = Cesium.Cartesian3.fromDegrees(-3.7037902, 40.4167754);
+        const halfAxes = Cesium.Matrix3.fromScale(new Cesium.Cartesian3(10000.0, 10000.0, 10000.0)); // 10km en cada dirección
+        const obb = new Cesium.OrientedBoundingBox(center, halfAxes);
+
+        // Crear un punto
+        const point = Cesium.Cartesian3.fromDegrees(-3.703, 40.416);
+
+        // Verificar si el punto está dentro del OrientedBoundingBox
+        const distanceSquared = obb.distanceSquaredTo(point);
+
+        console.log(distanceSquared); // Devuelve 0 si el punto está dentro de la caja
+
+        // Añadir el OrientedBoundingBox como una entidad al visor
+        viewer.entities.add({
+            position: center,
+            box: {
+                dimensions: new Cesium.Cartesian3(20000.0, 20000.0, 20000.0), // 20km en cada dirección
+                material: Cesium.Color.RED.withAlpha(0.5),
+            },
+        });
+
+        // Mover la cámara para ver el OrientedBoundingBox
+        viewer.camera.flyToBoundingSphere(new Cesium.BoundingSphere(center, 15000.0));
+    </script>
+</body>
+
+</html>
