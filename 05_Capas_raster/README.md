@@ -165,3 +165,6 @@ Proporciona un único mosaico de imágenes (WGS84 / EPSG:4326).
 * **GoogleEarth**
   * GoogleEarthEnterpriseImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GoogleEarthEnterpriseImageryProvider.html)  
   * GoogleEarthEnterpriseMapsProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GoogleEarthEnterpriseMapsProvider.html)
+
+## 5.3. ImageryProvider
+https://cesium.com/learn/cesiumjs/ref-doc/ImageryProvider.html?classFilter=imageryP
