@@ -8,7 +8,7 @@ Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider,
 
 **Opciones:**
 <details>
-  <summary>Alpha -> "Opacity"</summary>
+  <summary>Alpha ➡️ "Opacity"</summary>
  Valor Alpha, se puede utilizar para dar opacidad a la capa. Valor por defecto 1.0.  
   
  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer#alpha)
@@ -23,7 +23,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider, {alpha: 0.5});
 </details>  
 
 <details>
-  <summary>Show -> "Visibility"</summary>
+  <summary>Show ➡️ "Visibility"</summary>
 Determina si se muestra o no la capa.
   
  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer#show)
@@ -38,7 +38,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider, {show: false});
 </details>  
 
 <details>
-  <summary>minimumTerrainLevel y maximumTerrainLevel -> "minZoom y maxZoom"</summary>
+  <summary>minimumTerrainLevel y maximumTerrainLevel ➡️ "minZoom y maxZoom"</summary>
 Limita el zoom.  
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer)  
 
@@ -81,7 +81,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 ```
 
 <details>
-  <summary>tileWidth y tileHeight -> "TileSize"</summary>
+  <summary>tileWidth y tileHeight ➡️ "TileSize"</summary>
   Tamaño de la tesela, por defecto los valores son 256.
   
   * **tileWidth** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#tileWidth)
@@ -92,6 +92,38 @@ const osmProvider = new Cesium.UrlTemplateImageryProvider({
    url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
    tileWidth: 256,
    tileHeight: 256
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider);
+```
+</details>  
+
+<details>
+  <summary>maximumLevel y minimumLevel ➡️ "TileGridMaxZoom y TileGridMinZoom"</summary>
+  Zoom máximo y mínimo de la tesela en forma de rejilla.
+  
+  * **maximumLevel** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#maximumLevel)
+  * **minimumLevel** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#minimumLevel)
+
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+   maximumLevel:  17, // especifica el nivel máximo creado en el servicio para permitir hacer "overzoom"
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider);
+```
+</details>  
+
+<details>
+  <summary>rectangle ➡️ "MaxExtent"</summary>
+  Restringe la visualización a una región específica.
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#rectangle)
+
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+   rectangle : Cesium.Rectangle.fromDegrees(96.799393, -43.598214999057824, 153.63925700000001, -9.2159219997013)
 });
 
 viewer.imageryLayers.addImageryProvider(osmProvider);
