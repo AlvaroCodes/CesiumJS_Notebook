@@ -2,7 +2,7 @@
 
 ![scheme](./scheme.png)
 
-## 5.1. ImageryProvider
+## 5.1. ImageryLayer
 Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider, options))```.  
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLaye)  
 
