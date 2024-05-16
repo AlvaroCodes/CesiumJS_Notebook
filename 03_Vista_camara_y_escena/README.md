@@ -57,8 +57,6 @@ function setZoomOut(zoom) {
 
 </details>    
 
----
-
 **Ejemplos Cesium:**    
 ▶️ [Manejo de la cámara con el teclado](https://sandcastle.cesium.com/?src=Camera%20Tutorial.html&label=All)  
 ▶️ [Opciones vuelos cámara](https://sandcastle.cesium.com/?src=Camera.html&label=All)
