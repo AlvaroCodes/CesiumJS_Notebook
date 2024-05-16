@@ -51,11 +51,12 @@ function setZoomOut(zoom) {
 }
 ```
 
----
 **📂 Ejemplos:**  
 * Control del Zoom: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/01_Zoom.html) | 🚀[CodePen](https://codepen.io/mangelescarrillo/pen/LYvwdeN)
 
-</details>    
+</details>   
+
+---
 
 **Ejemplos Cesium:**    
 ▶️ [Manejo de la cámara con el teclado](https://sandcastle.cesium.com/?src=Camera%20Tutorial.html&label=All)  
