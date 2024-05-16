@@ -35,7 +35,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 
 <details>
   <summary>tileWidth y tileHeight -> "TileSize"</summary>
-  Tamaño de la tesela. por defecto los valores son 256.
+  Tamaño de la tesela, por defecto los valores son 256.
   
   * **tileWidth** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#tileWidth)
   * **tileHeight** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#tileHeight)
