@@ -1,10 +1,29 @@
-# Capas Raster  
+# 5. Capas Raster  
 
 ![scheme](./scheme.png)
 
-## ImageryProvider
+## 5.1. ImageryProvider
+Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider, options))```.  
+[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLaye)  
 
-### OpenStreetMapImageryProvider  | OSM  | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/OpenStreetMapImageryProvider.html)
+**Opciones:**
+<details>
+  <summary>Alpha -> "Opacity"</summary>
+ Valor Alpha, se puede utilizar para dar opacidad a la capa. Valor por defecto 1.0.  
+  
+ [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer#alpha)
+  
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider, {alpha: 0.5});
+```
+</details>  
+
+## 5.2 Proveedores
+### 5.2.1. OpenStreetMapImageryProvider  | OSM  | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/OpenStreetMapImageryProvider.html)
 Proporciona imágenes en mosaico alojadas en OpenStreetMap, por defecto "https://tile.openstreetmap.org/".
 ```javascript
 const osmProvider = new Cesium.OpenStreetMapImageryProvider({
@@ -17,12 +36,11 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 **Ejemplos:**  
 ▶️ [openstreetmap](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/03_OpenStreetMapImageryProvider.html)  
 
-### TileMapServiceImageryProvider | TMS - XYZ | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileMapServiceImageryProvider.html)
+### 5.2.2. TileMapServiceImageryProvider | TMS - XYZ | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileMapServiceImageryProvider.html)
   
-### WebMapServiceImageryProvider | WMS
-[📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMapServiceImageryProvider.html)
+### 5.2.3. WebMapServiceImageryProvider | WMS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMapServiceImageryProvider.html)
 
-### UrlTemplateImageryProvider | TMS - XYZ - WMS - WMTS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/UrlTemplateImageryProvider.html)  
+### 5.2.4. UrlTemplateImageryProvider | TMS - XYZ - WMS - WMTS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/UrlTemplateImageryProvider.html)  
 Realiza una consulta a una tesela por medio de una URL y te devuelve la imagen del provedor.
 
 ```javascript
@@ -39,46 +57,44 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
   
   * **tileWidth** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#tileWidth)
   * **tileHeight** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#tileHeight)
+
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+   tileWidth: 256,
+   tileHeight: 256
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider);
+```
 </details>  
 
 **Ejemplos:**  
 ▶️ [openstreetmap](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/01_UrlTemplateImageryProvider.html)  
 ▶️ [mierune + credit](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/02_UrlTemplateImageryProvider.html)
 
-### SingleTileImageryProvider | WMS - WMTS  
+### 5.2.5. SingleTileImageryProvider | WMS - WMTS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/SingleTileImageryProvider.html)  
 Proporciona un único mosaico de imágenes (WGS84 / EPSG:4326).  
-
-[📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/SingleTileImageryProvider.html)  
 
 **Ejemplos:**  
 ▶️ [Dog Img](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/04_SingleTileImageryProvider.html)  
 
-### WebMapTileServiceImageryProvider | WMTS
-[📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMapTileServiceImageryProvider.html)
+### WebMapTileServiceImageryProvider | WMTS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMapTileServiceImageryProvider.html)
 
-### Providers Visuales
-* TileCoordinatesImageryProvider  
-  [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileCoordinatesImageryProvider.html)
-* GridImageryProvider  
-  [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GridImageryProvider.html)
+### 5.2.6. Providers Visuales
+* TileCoordinatesImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileCoordinatesImageryProvider.html)  
+* GridImageryProvider  | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GridImageryProvider.html)  
 
-### Otros Providers
+### 5.2.7. Otros Providers
 * **Mapbox**
-  * **MapboxStyleImageryProvider**  
-    [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapboxStyleImageryProvider.html)
-  * **MapboxImageryProvider**  
-    [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapboxImageryProvider.html?classFilter=mapbox)
+  * MapboxStyleImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapboxStyleImageryProvider.html)  
+  * MapboxImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapboxImageryProvider.html?classFilter=mapbox)  
 * **Bingmapsportal**
-   * BingMapsImageryProvider  
-    [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/BingMapsImageryProvider.html?classFilter=Bingmaps)
+   * BingMapsImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/BingMapsImageryProvider.html?classFilter=Bingmaps)  
 * **Cesium**
-   * IonImageryProvider  
-    [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/IonImageryProvider.html?classFilter=ionima)
+   * IonImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/IonImageryProvider.html?classFilter=ionima)  
 * **ArcGis**
-  * ArcGisMapServerImageryProvider  
-    [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/ArcGisMapServerImageryProvider.html?classFilter=arc)
+  * ArcGisMapServerImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/ArcGisMapServerImageryProvider.html?classFilter=arc)  
 * **GoogleEarth**
-  * GoogleEarthEnterpriseImageryProvider  
-    [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GoogleEarthEnterpriseImageryProvider.html)
-  * GoogleEarthEnterpriseMapsProvider  
-    [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GoogleEarthEnterpriseMapsProvider.html)
+  * GoogleEarthEnterpriseImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GoogleEarthEnterpriseImageryProvider.html)  
+  * GoogleEarthEnterpriseMapsProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GoogleEarthEnterpriseMapsProvider.html)
