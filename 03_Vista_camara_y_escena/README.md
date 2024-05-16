@@ -1,5 +1,3 @@
-# Vista, cámara y escena. los marcadores
-
 ![scheme](./scheme.png)
 
 ## 🌐 Vista (View): 
@@ -12,7 +10,6 @@ Define la posición, orientación y campo de visión del observador virtual dent
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html)   
 
-**Opciones de la Cámara**
 <details>
   <summary>Valores por defecto</summary>
 
@@ -24,6 +21,36 @@ Define la posición, orientación y campo de visión del observador virtual dent
 
   *  **Cesium.Camera.DEFAULT_VIEW_RECTANGLE:** Te informa de la vista predeterminada de la cámara, propiedad solo de lectura.  
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#.DEFAULT_OFFSET) || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/02_dafault_view_rectangle.html)
+</details>    
+
+<details>
+  <summary>Opciones de zooms</summary>  
+  
+* **Cantidad de zoom - "getZoom"** [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/Cartographic.html#Cartographic)  
+```javascript
+  function getZoom() {
+    // Obtener el nivel de zoom (lo muestra en metros)
+    //  Te informa de la vista predeterminada de la cámara, propiedad solo de lectura.
+    console.log(viewer.camera.positionCartographic.height);
+  }
+```  
+  
+* **zoomIn(amount)** [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/Camera.html?classFilter=came#zoomIn)
+```javascript
+function setZoomIn(zoom) {
+  // Cambiar nivel de zoom: Si no se pasa ningún valor por defecto viewer.camera.defaultZoomAmount (100000.0) 
+  viewer.camera.zoomIn(zoom);
+}
+```
+
+*  **zoomOut(amount)** [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/Camera.html?classFilter=came#zoomOut)
+```javascript
+function setZoomOut(zoom) {
+  // Cambiar nivel de zoom: Si no se pasa ningún valor por defecto viewer.camera.defaultZoomAmount (100000.0) 
+  viewer.camera.zoomOut(zoom);
+}
+```
+
 </details>    
 
 ---
@@ -41,9 +68,7 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene)
 
 ### Elementos de la escena:
-#### 🌎 El globo (globe)  
-[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)
-
+#### 🌎 El globo (globe) [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)
 **Opciones del globo - Límitar extensión**
 <details>
   <summary>cartographicLimitRectangle</summary>
@@ -65,7 +90,7 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
     scene.skyAtmosphere.show = false;
   ```
   
-  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#cartographicLimitRectangle)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/02_dafault_view_rectangle.html)
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#cartographicLimitRectangle)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/08_cartographicLimitRectangle.html)
 </details> 
 
 <details>
@@ -91,5 +116,24 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
     viewer.scene.globe.clippingPlanes = clippingPlanes;
   ```
   
-  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/02_dafault_view_rectangle.html)
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)
 </details> 
+
+#### 🗺️ Proyecciones (mapProjection) [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapProjection.html)
+Cesium solo permite dos tipos de proyecciones/sistemas de referencia, WebMercatorProjection (EPSG:4326) y GeographicProjection(EPSG:3857).   
+
+Por defecto utiliza una proyección basada en el sistema de coordenadas geográficas (WGS84) que corresponde al código EPSG:4326.  
+Desde la escena se puede hacer el "getProjection":
+```javascript
+function getProjection() {
+  // Obtener proyección del mapa: Aunque cambie del 3D al 2D parece que no cambia la proyección.
+  console.log(viewer.scene.mapProjection);
+  if (viewer.scene.mapProjection instanceof Cesium.WebMercatorProjection) {
+    console.log('EPSG:3857');
+  } else if (viewer.scene.mapProjection instanceof Cesium.GeographicProjection) {
+    console.log('EPSG:4326');
+  }
+}
+```
+
+
