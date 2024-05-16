@@ -22,6 +22,35 @@ viewer.imageryLayers.addImageryProvider(osmProvider, {alpha: 0.5});
 ```
 </details>  
 
+<details>
+  <summary>Show -> "Visibility"</summary>
+Determina si se muestra o no la capa.
+  
+ [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer#show)
+  
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider, {show: false});
+```
+</details>  
+
+<details>
+  <summary>minimumTerrainLevel y maximumTerrainLevel -> "minZoom y maxZoom"</summary>
+Limita el zoom.  
+[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer)  
+
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider, {minimumTerrainLevel: minZoom, maximumTerrainLevel:maxZoom});
+```
+</details>  
+
 ## 5.2 Proveedores
 ### 5.2.1. OpenStreetMapImageryProvider  | OSM  | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/OpenStreetMapImageryProvider.html)
 Proporciona imágenes en mosaico alojadas en OpenStreetMap, por defecto "https://tile.openstreetmap.org/".
