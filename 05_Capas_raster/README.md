@@ -66,7 +66,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 ---
 
 **Ejemplos:**  
-▶️ [openstreetmap](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/03_OpenStreetMapImageryProvider.html)  
+▶️ openstreetmap: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/03_OpenStreetMapImageryProvider.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/ZENbPbW)
 
 ### 5.2.2. TileMapServiceImageryProvider | TMS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileMapServiceImageryProvider.html)
 Se utiliza para cargar imágenes de teselas desde un servidor con la especificicación TMS.
@@ -202,8 +202,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 ---
 
 **Ejemplos:**  
-▶️ [openstreetmap](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/01_UrlTemplateImageryProvider.html)  
-()
+▶️ openstreetmap: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/01_UrlTemplateImageryProvider.html)  
 ▶️ mierune + credit: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/02_UrlTemplateImageryProvider.html) | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/abrvXrB)
 
 
