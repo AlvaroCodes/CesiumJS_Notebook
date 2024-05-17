@@ -17,8 +17,8 @@
   - [3.3.2. 🗺️ Proyecciones (mapProjection)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/README.md#332-%EF%B8%8F-proyecciones-mapprojection)
 ## 4. Capas vectoriales
 ## 5. Capas raster
-- [5.1. ImageryLayer](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/05_Capas_raster#51-imagerylayer)
-- [5.2. Proveedores](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/05_Capas_raster#52-proveedores)
+- [5.1. 🏙️ ImageryLayer](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/05_Capas_raster#51-imagerylayer)
+- [5.2. 📦 Proveedores](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/05_Capas_raster#52-proveedores)
   - [5.2.1. OpenStreetMapImageryProvider | OSM](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/05_Capas_raster#521-openstreetmapimageryprovider---osm----doc)
   - [5.2.2. TileMapServiceImageryProvider | TMS](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/05_Capas_raster#522-tilemapserviceimageryprovider--tms---doc)
   - [5.2.3. WebMapServiceImageryProvider | WMS](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/05_Capas_raster#523-webmapserviceimageryprovider--wms---doc)
