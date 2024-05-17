@@ -31,15 +31,22 @@
           sceneModePicker: false,
           timeline: false,
           navigationHelpButton: false,
+
         });
 
-        const tms = new Cesium.UrlTemplateImageryProvider({
-            url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
+        const xyz = new Cesium.UrlTemplateImageryProvider({
+            url: 'https://rts.larioja.org/mapa-base/rioja/{z}/{x}/{y}.png',
         });
 
-        const provider = new Cesium.ImageryLayer(tms);
+        const provider = new Cesium.ImageryLayer(xyz, {
+            // show: true,
+            // alpha: 0.7,
+            // minimumTerrainLevel: 0,
+            // maximumTerrainLevel: 10,
+            // rectangle: Cesium.Rectangle.fromDegrees(-3.0, 42.0, -2.0, 43.0), // Solo se muestra la zona de La Rioja
+        });
 
-       viewer.imageryLayers.add(provider);
+        viewer.imageryLayers.add(provider);
     </script>
 </body>
 

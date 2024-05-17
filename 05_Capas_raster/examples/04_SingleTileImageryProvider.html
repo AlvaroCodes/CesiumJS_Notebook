@@ -27,7 +27,9 @@
             rectangle: Cesium.Rectangle.fromDegrees(-120.0, 20.0, -60.0, 40.0)
         });
 
-        viewer.imageryLayers.addImageryProvider(dogImage);
+        const provider = new Cesium.ImageryLayer(dogImage);
+
+       viewer.imageryLayers.add(provider);
     </script>
 </body>
 

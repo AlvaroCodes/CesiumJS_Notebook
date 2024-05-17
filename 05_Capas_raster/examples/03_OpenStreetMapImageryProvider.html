@@ -26,7 +26,10 @@
         const osmProvider = new Cesium.OpenStreetMapImageryProvider({
             url : 'https://tile.openstreetmap.org/'
         });
-        viewer.imageryLayers.addImageryProvider(osmProvider);
+
+       const provider = new Cesium.ImageryLayer(osmProvider);
+
+       viewer.imageryLayers.add(provider);
 
     </script>
 </body>
