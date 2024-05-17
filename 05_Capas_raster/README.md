@@ -221,13 +221,13 @@ Proporciona un único mosaico de imágenes (WGS84 / EPSG:4326).
 **Ejemplos:**  
 ▶️ Dog Img: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/04_SingleTileImageryProvider.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/VwOvRaX)
 
-### WebMapTileServiceImageryProvider | WMTS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMapTileServiceImageryProvider.html)
+### 5.2.6. WebMapTileServiceImageryProvider | WMTS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMapTileServiceImageryProvider.html)
 
-### 5.2.6. Providers Visuales
+### 5.2.7. Providers Visuales
 * TileCoordinatesImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileCoordinatesImageryProvider.html)  
 * GridImageryProvider  | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GridImageryProvider.html)  
 
-### 5.2.7. Otros Providers
+### 5.2.8. Otros Providers
 * **Mapbox**
   * MapboxStyleImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapboxStyleImageryProvider.html)  
   * MapboxImageryProvider | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapboxImageryProvider.html?classFilter=mapbox)  
