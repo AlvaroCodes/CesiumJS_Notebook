@@ -209,6 +209,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 **Ejemplos:**  
 ▶️ openstreetmap (XYZ): [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/01_UrlTemplateImageryProvider.html)  
 ▶️ mierune + credit (XYZ): [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/02_UrlTemplateImageryProvider.html) | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/abrvXrB)  
+▶️ larioja + params ImageryLayerImageryLayer (XYZ): [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/07_UrlTemplateImageryProvider) | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/bGyVJew) 
 ▶️ IGNBaseTodo (TMS): [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/06_UrlTemplateImageryProvider.html) | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/gOJaEBN)
 
 
