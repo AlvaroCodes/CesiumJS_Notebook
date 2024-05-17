@@ -73,9 +73,18 @@ Se utiliza para cargar imágenes de teselas desde un servidor con la especificic
 
 ```javascript
 const tmsProvider = new Cesium.TileMapServiceImageryProvider({
-    url: 'http://example.com/tilesets/tiles'
+    url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
 });
-```  
+```
+ℹ️ Para los valores negativos "{-z}", "{-x}" y "{-y}" se tiene que sustituir por "{reverseZ}", "{reverseX}" y "{reverseY}".
+```javascript
+const reverseRepleceUrl = (url) => {
+return url
+        .replace('{-z}', '{reverseZ}')
+        .replace('{-x}', '{reverseX}')
+        .replace('{-y}', '{reverseY}')
+}
+```
 
 <details>
   <summary>tileWidth y tileHeight ➡️ "TileSize"</summary>
