@@ -1,6 +1,6 @@
 # 3. Vista, cámara y escena
 
-->![scheme](./scheme.png)
+![scheme](./scheme.png)
 
 ## 3.1. 🌐 Vista (View): 
 Se refiere a la forma en que se muestra el globo terrestre y los objetos geoespaciales en la pantalla. Puede haber diferentes tipos de vistas, como la vista en perspectiva (3D) o la vista en ortografía (2D). La vista se configura a través del objeto Viewer o CesiumWidget, que proporciona métodos para cambiar entre diferentes vistas, como la vista 3D, 2D o en primer plano.  
