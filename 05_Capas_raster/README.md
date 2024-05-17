@@ -135,6 +135,11 @@ const osmProvider = new Cesium.TileMapServiceImageryProvider({
 viewer.imageryLayers.addImageryProvider(osmProvider);
 ```
 </details>  
+
+---
+
+**Ejemplos:**  
+▶️ IGNBaseTodo: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/05_TileMapServiceImageryProvider.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/bGyVZwP)
   
 ### 5.2.3. WebMapServiceImageryProvider | WMS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMapServiceImageryProvider.html)
 
