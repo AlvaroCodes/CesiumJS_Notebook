@@ -27,4 +27,5 @@
   - [5.2.6. WebMapTileServiceImageryProvider | WMTS](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/README.md#526-webmaptileserviceimageryprovider--wmts---doc)
   - [5.2.7. Providers Visuales](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/README.md#527-providers-visuales)
   - [5.2.8. Otros Providers](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/README.md#528-otros-providers)
+- [5.3. ImageryProvider](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/README.md#53-imageryprovider)
 ## 6. EventosImageryLayer
