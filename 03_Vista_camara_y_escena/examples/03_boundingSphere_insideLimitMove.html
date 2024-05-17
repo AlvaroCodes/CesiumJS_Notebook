@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="cnig" content="yes">
+   <title>Visor base</title>
+   <link type="text/css" rel="stylesheet"
+      href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css">
+   <script type="text/javascript"
+      src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
+   <style type="text/css">
+      html,
+      body {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         overflow: hidden;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="cesiumContainer"></div>
+   <script type="text/javascript">
+      // Map
+      const viewer = new Cesium.Viewer('cesiumContainer', {
+          animation: false,
+          baseLayerPicker: false,
+          fullscreenButton: false,
+          vrButton: false,
+          geocoder: false,
+          homeButton: false,
+          sceneModePicker: false,
+          timeline: false,
+          navigationHelpButton: false,
+      });
+  
+      // Coordinates for Madrid, Spain
+      const center = Cesium.Cartesian3.fromDegrees(-3.7037902, 40.4167754);
+      const radius = 10000.0; // radius in meters
+  
+      // Bounding sphere
+      const boundingSphere = new Cesium.BoundingSphere(center, radius);
+  
+      // Set the camera view to center on the bounding sphere
+      viewer.camera.flyToBoundingSphere(boundingSphere);
+  
+      // Add a listener to the camera.changed event
+      viewer.camera.changed.addEventListener(function() {
+          // Calculate the distance from the center of the sphere to the camera
+          const distance = Cesium.Cartesian3.distance(boundingSphere.center, viewer.camera.positionWC);
+  
+          // If the camera is outside the bounding sphere, move it back to the edge of the sphere
+          if (distance > boundingSphere.radius) {
+              const direction = Cesium.Cartesian3.subtract(viewer.camera.positionWC, boundingSphere.center, new Cesium.Cartesian3());
+              Cesium.Cartesian3.normalize(direction, direction);
+              Cesium.Cartesian3.multiplyByScalar(direction, boundingSphere.radius, direction);
+              Cesium.Cartesian3.add(boundingSphere.center, direction, viewer.camera.positionWC);
+          }
+      });
+  
+      /*
+      // Add the bounding sphere as an entity to the viewer for debugging
+      viewer.entities.add({
+          position: center,
+          ellipsoid: {
+              radii: new Cesium.Cartesian3(radius, radius, radius),
+              material: Cesium.Color.RED.withAlpha(0.5),
+          },
+      });*/
+  </script>
+
+  </body>
+  </html>
+</body>
+
+</html>
