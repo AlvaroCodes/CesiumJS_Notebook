@@ -40,8 +40,9 @@ viewer.imageryLayers.addImageryProvider(osmProvider, {show: false});
 <details>
   <summary>minimumTerrainLevel y maximumTerrainLevel ➡️ "minZoom y maxZoom"</summary>
 Limita el zoom.  
-[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer)  
 
+ [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer)
+  
 ```javascript
 const osmProvider = new Cesium.UrlTemplateImageryProvider({
    url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -84,8 +85,8 @@ const tmsProvider = new Cesium.TileMapServiceImageryProvider({
   * **tileHeight** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#tileHeight)
 
 ```javascript
-const osmProvider = new Cesium.UrlTemplateImageryProvider({
-   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+const osmProvider = new Cesium.TileMapServiceImageryProvider({
+   url: 'http://example.com/tilesets/tiles',
    tileWidth: 256,
    tileHeight: 256
 });
@@ -102,8 +103,8 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
   * **minimumLevel** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#minimumLevel)
 
 ```javascript
-const osmProvider = new Cesium.UrlTemplateImageryProvider({
-   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+const osmProvider = new Cesium.TileMapServiceImageryProvider({
+   url: 'http://example.com/tilesets/tiles',
    maximumLevel:  17, // especifica el nivel máximo creado en el servicio para permitir hacer "overzoom"
 });
 
@@ -117,8 +118,8 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#rectangle)
 
 ```javascript
-const osmProvider = new Cesium.UrlTemplateImageryProvider({
-   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+const osmProvider = new Cesium.TileMapServiceImageryProvider({
+   url: 'http://example.com/tilesets/tiles',
    rectangle : Cesium.Rectangle.fromDegrees(96.799393, -43.598214999057824, 153.63925700000001, -9.2159219997013)
 });
 
