@@ -86,7 +86,7 @@ const tmsProvider = new Cesium.TileMapServiceImageryProvider({
 
 ```javascript
 const osmProvider = new Cesium.TileMapServiceImageryProvider({
-   url: 'http://example.com/tilesets/tiles',
+   url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
    tileWidth: 256,
    tileHeight: 256
 });
@@ -104,7 +104,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 
 ```javascript
 const osmProvider = new Cesium.TileMapServiceImageryProvider({
-   url: 'http://example.com/tilesets/tiles',
+   url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
    maximumLevel:  17, // especifica el nivel máximo creado en el servicio para permitir hacer "overzoom"
 });
 
@@ -119,7 +119,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 
 ```javascript
 const osmProvider = new Cesium.TileMapServiceImageryProvider({
-   url: 'http://example.com/tilesets/tiles',
+   url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
    rectangle : Cesium.Rectangle.fromDegrees(96.799393, -43.598214999057824, 153.63925700000001, -9.2159219997013)
 });
 
