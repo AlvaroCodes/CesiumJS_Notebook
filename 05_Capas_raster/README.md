@@ -208,7 +208,8 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 
 **Ejemplos:**  
 ▶️ openstreetmap (XYZ): [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/01_UrlTemplateImageryProvider.html)  
-▶️ mierune + credit (XYZ): [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/02_UrlTemplateImageryProvider.html) | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/abrvXrB)
+▶️ mierune + credit (XYZ): [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/02_UrlTemplateImageryProvider.html) | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/abrvXrB)  
+▶️ IGNBaseTodo (TMS): [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/06_UrlTemplateImageryProvider.html) | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/gOJaEBN)
 
 
 ### 5.2.5. SingleTileImageryProvider | WMS - WMTS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/SingleTileImageryProvider.html)  
