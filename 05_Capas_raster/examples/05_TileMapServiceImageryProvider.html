@@ -33,11 +33,11 @@
           navigationHelpButton: false,
         });
 
-        const osmProvider = new Cesium.TileMapServiceImageryProvider({
+        const tms = new Cesium.TileMapServiceImageryProvider({
             url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
         });
         
-        viewer.imageryLayers.addImageryProvider(osmProvider);
+        viewer.imageryLayers.addImageryProvider(tms);
 
     </script>
 </body>
