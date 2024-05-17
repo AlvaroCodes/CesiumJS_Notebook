@@ -2,7 +2,7 @@
 
 ![scheme](./scheme.png)
 
-## 5.1. ImageryLayer
+## 5.1. 🏙️ ImageryLayer
 Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider, options))```.  
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLaye)  
 
@@ -52,7 +52,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider, {minimumTerrainLevel: minZo
 ```
 </details>  
 
-## 5.2 Proveedores
+## 5.2. 📦 Proveedores
 ### 5.2.1. OpenStreetMapImageryProvider  | OSM  | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/OpenStreetMapImageryProvider.html)
 Proporciona imágenes en mosaico alojadas en OpenStreetMap, por defecto "https://tile.openstreetmap.org/".
 ```javascript
