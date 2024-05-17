@@ -67,7 +67,64 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 **Ejemplos:**  
 ▶️ [openstreetmap](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/05_Capas_raster/examples/03_OpenStreetMapImageryProvider.html)  
 
-### 5.2.2. TileMapServiceImageryProvider | TMS - XYZ | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileMapServiceImageryProvider.html)
+### 5.2.2. TileMapServiceImageryProvider | TMS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/TileMapServiceImageryProvider.html)
+Se utiliza para cargar imágenes de teselas desde un servidor con la especificicación TMS.
+
+```javascript
+const tmsProvider = new Cesium.TileMapServiceImageryProvider({
+    url: 'http://example.com/tilesets/tiles'
+});
+```  
+
+<details>
+  <summary>tileWidth y tileHeight ➡️ "TileSize"</summary>
+  Tamaño de la tesela, por defecto los valores son 256.
+  
+  * **tileWidth** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#tileWidth)
+  * **tileHeight** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#tileHeight)
+
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+   tileWidth: 256,
+   tileHeight: 256
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider);
+```
+</details>  
+
+<details>
+  <summary>maximumLevel y minimumLevel ➡️ "TileGridMaxZoom y TileGridMinZoom"</summary>
+  Zoom máximo y mínimo de la tesela en forma de rejilla.
+  
+  * **maximumLevel** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#maximumLevel)
+  * **minimumLevel** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#minimumLevel)
+
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+   maximumLevel:  17, // especifica el nivel máximo creado en el servicio para permitir hacer "overzoom"
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider);
+```
+</details>  
+
+<details>
+  <summary>rectangle ➡️ "MaxExtent"</summary>
+  Restringe la visualización a una región específica.
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#rectangle)
+
+```javascript
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+   rectangle : Cesium.Rectangle.fromDegrees(96.799393, -43.598214999057824, 153.63925700000001, -9.2159219997013)
+});
+
+viewer.imageryLayers.addImageryProvider(osmProvider);
+```
+</details>  
   
 ### 5.2.3. WebMapServiceImageryProvider | WMS | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMapServiceImageryProvider.html)
 
