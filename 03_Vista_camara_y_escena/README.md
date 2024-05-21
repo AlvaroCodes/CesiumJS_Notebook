@@ -7,6 +7,43 @@ Se refiere a la forma en que se muestra el globo terrestre y los objetos geoespa
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Viewer.html?classFilter=view)
 
+### 3.1.1. 🔍 Escala (Scale)
+La escala permite a los usuarios interpretar correctamente las distancias y tamaños de los objetos mostrados en el mapa.
+
+Para calcular la distancia entre dos puntos en la superficie del globo, se utiliza EllipsoidGeodesic. Este objeto permite calcular la distancia geodésica (la distancia más corta sobre la superficie del elipsoide) entre dos puntos.
+
+```javascript
+/*
+Para calcular distancias sobre la superficie del globo (Ellipsoid.WGS84)
+      
+📘 Doc: https://cesium.com/learn/ion-sdk/ref-doc/EllipsoidGeodesic.html
+*/
+const geodesic = new Cesium.EllipsoidGeodesic();
+
+/*
+Coordenadas del borde inferior de la pantalla para obtener las posiciones de 
+la izquierda y la derecha en el globo 
+         
+📘 Doc getPickRay: https://cesium.com/learn/cesiumjs/ref-doc/Camera.html#getPickRay
+📘 Doc pick: https://cesium.com/learn/cesiumjs/ref-doc/Globe.html?classFilter=GLOBE#pick
+*/
+
+const left = scene.camera.getPickRay(new Cesium.Cartesian2((width / 2) | 0, height - 1));
+const right = scene.camera.getPickRay(new Cesium.Cartesian2((1 + width / 2) | 0, height - 1));
+const leftPosition = globe.pick(left, scene);
+const rightPosition = globe.pick(right, scene);
+
+/*
+Las posiciones en coordenadas cartesianas se convierten a coordenadas cartográficas 
+y se utilizan para calcular la distancia geodésica en la superficie del elipsoide.
+*/
+const leftCartographic = globe.ellipsoid.cartesianToCartographic(leftPosition);
+const rightCartographic = globe.ellipsoid.cartesianToCartographic(rightPosition);
+
+geodesic.setEndPoints(leftCartographic, rightCartographic);
+const pixelDistance = geodesic.surfaceDistance; // Distancia en metros
+```
+
 ## 3.2. 📷 Cámara (Camera): 
 Define la posición, orientación y campo de visión del observador virtual dentro del mundo 3D. Puedes controlar la cámara para cambiar la perspectiva del usuario sobre el globo terrestre o cualquier otro objeto en la escena. Puedes ajustar la posición y orientación de la cámara programáticamente para enfocarte en áreas específicas del globo o para seguir objetos en movimiento.  
 
