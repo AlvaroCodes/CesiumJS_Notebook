@@ -10,7 +10,7 @@ Se refiere a la forma en que se muestra el globo terrestre y los objetos geoespa
 ### 3.1.1. 🔍 Escala (Scale)
 La escala permite a los usuarios interpretar correctamente las distancias y tamaños de los objetos mostrados en el mapa.
 
-Para calcular la distancia entre dos puntos en la superficie del globo, se utiliza EllipsoidGeodesic. Este objeto permite calcular la distancia geodésica (la distancia más corta sobre la superficie del elipsoide) entre dos puntos.
+Para calcular la distancia entre dos puntos en la superficie del globo, se utiliza **_EllipsoidGeodesic_**. Este objeto permite calcular la distancia geodésica (la distancia más corta sobre la superficie del elipsoide) entre dos puntos.
 
 ```javascript
 /*
