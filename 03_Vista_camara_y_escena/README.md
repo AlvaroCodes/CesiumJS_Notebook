@@ -12,8 +12,6 @@ La escala permite a los usuarios interpretar correctamente las distancias y tama
 
 Para calcular la distancia entre dos puntos en la superficie del globo, se utiliza EllipsoidGeodesic. Este objeto permite calcular la distancia geodésica (la distancia más corta sobre la superficie del elipsoide) entre dos puntos.
 
-▶️ scaleLine: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/09_scaleLine.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/PovNOyX)
-
 ```javascript
 /*
 Para calcular distancias sobre la superficie del globo (Ellipsoid.WGS84)
@@ -44,7 +42,8 @@ const rightCartographic = globe.ellipsoid.cartesianToCartographic(rightPosition)
 
 geodesic.setEndPoints(leftCartographic, rightCartographic);
 const pixelDistance = geodesic.surfaceDistance; // Distancia en metros
-```
+```  
+▶️ scaleLine: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/09_scaleLine.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/PovNOyX)
 
 ## 3.2. 📷 Cámara (Camera): 
 Define la posición, orientación y campo de visión del observador virtual dentro del mundo 3D. Puedes controlar la cámara para cambiar la perspectiva del usuario sobre el globo terrestre o cualquier otro objeto en la escena. Puedes ajustar la posición y orientación de la cámara programáticamente para enfocarte en áreas específicas del globo o para seguir objetos en movimiento.  
