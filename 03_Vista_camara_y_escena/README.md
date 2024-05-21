@@ -12,6 +12,8 @@ La escala permite a los usuarios interpretar correctamente las distancias y tama
 
 Para calcular la distancia entre dos puntos en la superficie del globo, se utiliza EllipsoidGeodesic. Este objeto permite calcular la distancia geodésica (la distancia más corta sobre la superficie del elipsoide) entre dos puntos.
 
+▶️ scaleLine: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/09_scaleLine.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/PovNOyX)
+
 ```javascript
 /*
 Para calcular distancias sobre la superficie del globo (Ellipsoid.WGS84)
