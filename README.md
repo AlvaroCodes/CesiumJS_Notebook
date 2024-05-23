@@ -4,8 +4,8 @@
 ## 1. Introducción a CesiumJS
 - [1.1. ⭐ Introducción a CesiumJS](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/README.md#11--introducci%C3%B3n-a-cesiumjs)
 - [1.2. 👷 Entorno de Desarrollo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/README.md#12--entorno-de-desarrollo)
-  - [1.2.1. Formas de usar CesiumJS](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/README.md#121-formas-de-usar-cesiumjs)
-  - [1.2.2. Entornos de Desarrollo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/README.md#122-entornos-de-desarrollo)
+  - [1.2.1. 🎯 Formas de usar CesiumJS](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/README.md#121-formas-de-usar-cesiumjs)
+  - [1.2.2. 🔩 Entornos de Desarrollo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/README.md#122-entornos-de-desarrollo)
 ## 2. Coordenadas, sistemas de referencia y proyecciones
 - [2.1. 🧭 Coordenadas](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#21--coordenadas)
   - [2.1.1. 🔄 Transformaciones de Coordenadas](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#211--transformaciones-de-coordenadas)
