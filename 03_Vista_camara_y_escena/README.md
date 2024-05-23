@@ -161,23 +161,12 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)
 </details> 
 
-### 3.3.2. 🗺️ Proyecciones (mapProjection) 
-[📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/MapProjection.html)  
+### 3.3.2. 🌌 Atmósfera (atmosphere).
+Proporciona una representación realista de la atmósfera del cielo, incluyendo efectos como la dispersión de la luz y la iluminación atmosférica.
 
-Cesium solo permite dos tipos de proyecciones/sistemas de referencia, WebMercatorProjection (EPSG:4326) y GeographicProjection(EPSG:3857).   
+[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/SkyAtmosphere.html?classFilter=skyAtmosphere)  
 
-Por defecto utiliza una proyección basada en el sistema de coordenadas geográficas (WGS84) que corresponde al código EPSG:4326.  
-Desde la escena se puede hacer el "getProjection":
-```javascript
-function getProjection() {
-  // Obtener proyección del mapa: Aunque cambie del 3D al 2D parece que no cambia la proyección.
-  console.log(viewer.scene.mapProjection);
-  if (viewer.scene.mapProjection instanceof Cesium.WebMercatorProjection) {
-    console.log('EPSG:3857');
-  } else if (viewer.scene.mapProjection instanceof Cesium.GeographicProjection) {
-    console.log('EPSG:4326');
-  }
-}
-```
+▶️ Ejemplo Cesium - Atmosphere: 🚀[sandcastle Cesium](https://sandcastle.cesium.com/?src=Atmosphere.html)  
+
 
 
