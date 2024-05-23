@@ -74,11 +74,13 @@ Se utiliza la clase Cesium.Math para realizar conversiones entre grados y radian
     ```
 
 ## 2.2. 🗺️ Proyecciones y Sistema de referencia
-  * **WebMercatorProjection | EPSG:4326**. Esta proyección es el estándar para representar coordenadas geográficas (latitud y longitud), es una proyección cilíndrica, tiene la capacidad para representar áreas extensas de la Tierra con distorsión mínima.   
+En CesiumJS, la proyección geográfica por defecto es EPSG:4326 (WGS84). Cuando se trabaja con la proyección 2D, CesiumJS utiliza EPSG:3857 (Web Mercator).
+
+  * **WebMercatorProjection | EPSG:3857**. Esta proyección es el estándar para representar coordenadas geográficas (latitud y longitud), es una proyección cilíndrica, tiene la capacidad para representar áreas extensas de la Tierra con distorsión mínima.   
     EPSG:4326 representa las coordenadas geográficas en grados decimales de latitud y longitud, donde la latitud varía entre -90 y 90 grados y la longitud entre -180 y 180 grados.  
     [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMercatorProjection.html)
     
-  * **GeographicProjection | EPSG:3857**.  Convierte las coordenadas geográficas en pares de coordenadas planas X e Y en metros, capacidad para representar grandes áreas con precisión pero puede introducir distorsiones en áreas cercanas a los polos.  
+  * **GeographicProjection | EPSG:4326**. Convierte las coordenadas geográficas en pares de coordenadas planas X e Y en metros, capacidad para representar grandes áreas con precisión pero puede introducir distorsiones en áreas cercanas a los polos.  
     [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GeographicProjection.html)
 
    ```JavaScript
