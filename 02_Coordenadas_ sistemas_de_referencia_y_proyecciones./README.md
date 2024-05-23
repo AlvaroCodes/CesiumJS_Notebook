@@ -29,7 +29,7 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
         <br/>
    ```JavaScript
    import { Cartesian2, Cartesian3, Cartesian4, Cartographic } from 'cesium';
-   const cat2 = new Certesian2(x, y)
+   const cat2 = new Certesian2(x, y);
    ```
 ## 2.2. 🗺️ Proyecciones y Sistema de referencia
   * **WebMercatorProjection | EPSG:4326**. Esta proyección es el estándar para representar coordenadas geográficas (latitud y longitud), es una proyección cilíndrica, tiene la capacidad para representar áreas extensas de la Tierra con distorsión mínima.   
@@ -45,3 +45,10 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
    import { Viewer, WebMercatorProjection } from 'cesium';
    const viewer = new Viewer("cesiumContainer", mapProjection: new WebMercatorProjection());
    ```
+### 2.2.1. Dimensiones Geoespaciales (Rectangle y Ellipsoid).
+* **Rectangle**: Rectángulo en coordenadas geográficas (longitud y latitud). Útil para definir áreas en la superficie, como zonas de visualización o regiones de interés.  
+    [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Rectangle.html?classFilter=recta)
+  
+* **Ellipsoid**: Las coordenadas también se pueden asociar con elipsoides personalizados, no solo con la forma estándar de la Tierra (WGS84). Esto es útil para simulaciones o representaciones de otros cuerpos celestes.
+   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Ellipsoid.html?classFilter=ellips)
+
