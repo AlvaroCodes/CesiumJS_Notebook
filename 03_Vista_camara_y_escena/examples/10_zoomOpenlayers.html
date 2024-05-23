@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="cnig" content="yes">
+    <title>Visor base</title>
+    <link type="text/css" rel="stylesheet"
+        href="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Widgets/widgets.css">
+    <script type="text/javascript"
+        src="https://cesium.com/downloads/cesiumjs/releases/1.117/Build/Cesium/Cesium.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cesiumContainer"></div>
+    <script type="module">
+        // ! NO SE COMPORTA DEL TODO IGUAL 
+        // TODO: Revisar
+        
+        // Mapa 
+        const viewer = new Cesium.Viewer('cesiumContainer', {
+            animation: false,
+            baseLayerPicker: false,
+            fullscreenButton: false,
+            vrButton: false,
+            geocoder: false,
+            homeButton: false,
+            sceneModePicker: false,
+            timeline: false,
+            navigationHelpButton: false,
+        });
+
+        // Zooms mínimos y máximos de OpenLayers
+        const MIN_ZOOM_OPENLAYERS = 0;
+        const MAX_ZOOM_OPENLAYERS = 28;
+
+        // Altura máxima de la cámara
+        const MAX_HEIGHT = 100000000.0;
+        const STEPS_HEIGHT = 100000.0;
+
+        // FlyTo a la altura máxima
+        viewer.camera.flyTo({
+            destination: Cesium.Cartesian3.fromDegrees(0.0, 0.0, MAX_HEIGHT)
+        });
+
+        const zoomLevelHeights = getZoomLevelHeights(1);
+        for (let i = 0; i < zoomLevelHeights.length; i++) {
+            console.log(`Level: ${zoomLevelHeights[i].level}, camera height: ${zoomLevelHeights[i].height}`);
+        }
+
+        function getZoomLevelHeights(precision = 10) {
+            let step = STEPS_HEIGHT;
+            const result = [];
+            let currentZoomLevel = 0;
+
+            for (let height = MAX_HEIGHT; height > step; height -= step) {
+                const level = detectZoomLevel(height);
+                if (level === null) break;
+
+                if (level !== currentZoomLevel) {
+                    let minHeight = height;
+                    let maxHeight = height + step;
+                    while (maxHeight - minHeight > precision) {
+                        height = minHeight + (maxHeight - minHeight) / 2;
+                        if (detectZoomLevel(height) === level) {
+                            minHeight = height;
+                        } else {
+                            maxHeight = height;
+                        }
+                    }
+
+                    result.push({
+                        level: level,
+                        height: Math.round(height)
+                    });
+
+                    currentZoomLevel = level;
+
+                    if (result.length >= 2) {
+                        step = (result[result.length - 2].height - height) / 1000.0;
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        function detectZoomLevel(distance) {
+            const scene = viewer.scene;
+            const tileProvider = scene.globe._surface.tileProvider;
+            const quadtree = tileProvider._quadtree;
+            const drawingBufferHeight = viewer.canvas.height;
+            const sseDenominator = viewer.camera.frustum.sseDenominator;
+
+            for (let level = 0; level <= MAX_ZOOM_OPENLAYERS; level++) {
+                const maxGeometricError = tileProvider.getLevelMaximumGeometricError(level);
+                const error = (maxGeometricError * drawingBufferHeight) / (distance * sseDenominator);
+                if (error < quadtree.maximumScreenSpaceError) {
+                    return level;
+                }
+            }
+
+            return null;
+        }
+    </script>
+</body>
+
+</html>
