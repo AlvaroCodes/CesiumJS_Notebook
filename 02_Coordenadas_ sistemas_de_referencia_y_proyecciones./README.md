@@ -72,9 +72,9 @@ Se utiliza la clase Cesium.Math para realizar conversiones entre grados y radian
 ## 2.2. 🗺️ Proyecciones y Sistema de referencia
 En CesiumJS, la proyección geográfica por defecto es EPSG:4326 (WGS84). Cuando se trabaja con la proyección 2D, CesiumJS utiliza EPSG:3857 (Web Mercator).
 
-  * **WebMercatorProjection | EPSG:3857**. [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMercatorProjection.html)
+  * **WebMercatorProjection (EPSG:3857)** | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/WebMercatorProjection.html)
     
-  * **GeographicProjection | EPSG:4326**. [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GeographicProjection.html)
+  * **GeographicProjection (EPSG:4326)** | [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GeographicProjection.html)
 
    ```JavaScript
    import { Viewer, WebMercatorProjection } from 'cesium';
