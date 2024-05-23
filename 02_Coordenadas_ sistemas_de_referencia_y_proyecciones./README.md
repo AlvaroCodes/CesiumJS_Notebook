@@ -31,18 +31,14 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
    const cat2 = new Certesian2(x, y);
    ```
 ### 2.1.1. 🔄 Transformaciones de Coordenadas
-* **Coordenadas Cartográficas a Cartesianas**
+* **Coordenadas Cartográficas a Cartesianas** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Cartographic.html?classFilter=Cartographic#.toCartesian)
   ```javascript
   const cartographic = Cesium.Cartographic.fromDegrees(INITIAL_LONGITUDE, INITIAL_LATITUDE, INITIAL_HEIGHT);
   const cartesian = Cesium.Cartographic.toCartesian(cartographic);
-
-  // 📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/Cartographic.html?classFilter=Cartographic#.toCartesian
   ```
-* **Coordenadas Cartesianas a Cartográficas**
+* **Coordenadas Cartesianas a Cartográficas** | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Ellipsoid.html?classFilter=Ellipsoid#cartesianToCartographic)
   ```javascript
   const cartographic = Cesium.Ellipsoid.WGS84.cartesianToCartographic(cartesian);
-
-  // 📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/Ellipsoid.html?classFilter=Ellipsoid#cartesianToCartographic
   ```
 
  ▶️ Transformaciones de Coordenadas: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./examples/01_transformCoord.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/MWdeEZP)  
