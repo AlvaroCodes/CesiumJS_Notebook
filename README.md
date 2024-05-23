@@ -8,7 +8,9 @@
   - [1.2.2. Entornos de Desarrollo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/README.md#122-entornos-de-desarrollo)
 ## 2. Coordenadas, sistemas de referencia y proyecciones
 - [2.1. 🧭 Coordenadas](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#21--coordenadas)
+  - [2.1.1. 🔄 Transformaciones de Coordenadas](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#211--transformaciones-de-coordenadas) 
 - [2.2. 🗺️ Proyecciones y Sistema de referencia](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#21--coordenadas)
+  - [2.2.1. 🔵 Dimensiones Geoespaciales (Rectangle y Ellipsoid)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#221--dimensiones-geoespaciales-rectangle-y-ellipsoid)   
 ## 3. Vista, camara y escena
 - [3.1. 🌐 Vista (View)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/README.md#31--vista-view)
 - [3.2. 📷 Cámara (Camera)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/README.md#32--c%C3%A1mara-camera)
