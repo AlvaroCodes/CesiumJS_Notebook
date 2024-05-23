@@ -22,7 +22,7 @@ CesiumJS es una biblioteca JavaScript de código abierto que se utiliza para cre
 
 ## 1.2. 👷 Entorno de Desarrollo
 
-### 1.2.1. Formas de usar CesiumJS:  
+### 1.2.1. 🎯 Formas de usar CesiumJS:  
 
 [📘 Doc](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/)
 
@@ -48,7 +48,7 @@ CesiumJS es una biblioteca JavaScript de código abierto que se utiliza para cre
     ```
 [Ejemplo HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/examples/01-cdn-example.html)
 
-### 1.2.2. Entornos de Desarrollo:
+### 1.2.2. 🔩 Entornos de Desarrollo:
 ⚠️ Se recomienda utilizar el CDN en vez de npm, problema con workers.
 
 | Webpack      | Vite        |
