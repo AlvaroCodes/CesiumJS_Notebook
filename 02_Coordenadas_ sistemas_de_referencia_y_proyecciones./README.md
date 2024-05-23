@@ -59,15 +59,13 @@ const height = 100000; // en metros
 
 const positionRadians = new Cesium.Cartographic(longitudeRadians, latitudeRadians, height);
 ```
-* **Conversión entre Grados y Radianes**
-Se utiliza la clase Cesium.Math para realizar conversiones entre grados y radianes, así como otras operaciones matemáticas.
-  * De grados a radianes:
-    [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Math.html?classFilter=math#.toRadians)
+* **Conversión entre Grados y Radianes**  
+Se utiliza la clase Cesium.Math para realizar conversiones entre grados y radianes, así como otras operaciones matemáticas.  
+  * De grados a radianes | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Math.html?classFilter=math#.toRadians)  
     ```javascript
     const radians = Cesium.Math.toRadians(degrees);
     ```
-  * De radianes a grados:
-    [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Math.html?classFilter=math#.toDegrees)
+  * De radianes a grados | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Math.html?classFilter=math#.toDegrees)  
     ```javascript
     const degrees = Cesium.Math.toDegrees(radians);
     ```
