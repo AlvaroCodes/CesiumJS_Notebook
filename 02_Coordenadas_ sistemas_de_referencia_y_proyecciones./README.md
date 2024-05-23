@@ -80,6 +80,20 @@ En CesiumJS, la proyección geográfica por defecto es EPSG:4326 (WGS84). Cuando
    import { Viewer, WebMercatorProjection } from 'cesium';
    const viewer = new Viewer("cesiumContainer", mapProjection: new WebMercatorProjection());
    ```
+
+Desde la escena se puede hacer el "getProjection":
+```javascript
+function getProjection() {
+  // Obtener proyección del mapa: Aunque cambie del 3D al 2D parece que no cambia la proyección.
+  console.log(viewer.scene.mapProjection);
+  if (viewer.scene.mapProjection instanceof Cesium.WebMercatorProjection) {
+    console.log('EPSG:3857');
+  } else if (viewer.scene.mapProjection instanceof Cesium.GeographicProjection) {
+    console.log('EPSG:4326');
+  }
+}
+```
+
 ### 2.2.1. 🔵 Dimensiones Geoespaciales (Rectangle y Ellipsoid)
 * **Rectangle**: Rectángulo en coordenadas geográficas (longitud y latitud). Útil para definir áreas en la superficie, como zonas de visualización o regiones de interés.  
     [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Rectangle.html?classFilter=recta)
