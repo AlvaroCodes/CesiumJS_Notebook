@@ -17,7 +17,7 @@
 - [3.2. 📷 Cámara (Camera)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/README.md#32--c%C3%A1mara-camera)
 - [3.3. ⛰️ Escena (Scene)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/README.md#33-%EF%B8%8F-escena-scene)
   - [3.3.1. 🌎 El globo (globe)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/README.md#331--el-globo-globe)
-  - [3.3.2. 🗺️ Proyecciones (mapProjection)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/README.md#332-%EF%B8%8F-proyecciones-mapprojection)
+  - [3.3.2. 🌌 Atmósfera (atmosphere)](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/03_Vista_camara_y_escena#332--atm%C3%B3sfera-atmosphere)
 ## 4. Capas vectoriales
 ## 5. Capas raster
 - [5.1. 🏙️ ImageryLayer](https://github.com/AlvaroCodes/cesiumJS_notebook/tree/main/05_Capas_raster#51-imagerylayer)
