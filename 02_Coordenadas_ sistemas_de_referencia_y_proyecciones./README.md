@@ -31,7 +31,7 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
    import { Cartesian2, Cartesian3, Cartesian4, Cartographic } from 'cesium';
    const cat2 = new Certesian2(x, y);
    ```
-### 🔄 2.1.1. Transformaciones de Coordenadas
+### 2.1.1. 🔄 Transformaciones de Coordenadas
 * **Coordenadas Cartográficas a Cartesianas**
   ```javascript
   const cartographic = Cesium.Cartographic.fromDegrees(INITIAL_LONGITUDE, INITIAL_LATITUDE, INITIAL_HEIGHT);
@@ -62,7 +62,7 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
    import { Viewer, WebMercatorProjection } from 'cesium';
    const viewer = new Viewer("cesiumContainer", mapProjection: new WebMercatorProjection());
    ```
-### 🔵 2.2.1. Dimensiones Geoespaciales (Rectangle y Ellipsoid).
+### 2.2.1. 🔵 Dimensiones Geoespaciales (Rectangle y Ellipsoid).
 * **Rectangle**: Rectángulo en coordenadas geográficas (longitud y latitud). Útil para definir áreas en la superficie, como zonas de visualización o regiones de interés.  
     [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Rectangle.html?classFilter=recta)
   
