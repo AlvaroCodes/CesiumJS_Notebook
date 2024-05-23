@@ -26,7 +26,6 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
     * **CartographicGeocoderService**: Geocodifica consultas que contienen coordenadas cartográficas (longitude, latitude, height).  
       [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/CartographicGeocoderService.html)  
       
-        <br/>
    ```JavaScript
    import { Cartesian2, Cartesian3, Cartesian4, Cartographic } from 'cesium';
    const cat2 = new Certesian2(x, y);
@@ -61,7 +60,8 @@ const positionRadians = new Cesium.Cartographic(longitudeRadians, latitudeRadian
 ```
 
  ▶️ radiansDestination: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./examples/02_radiansDestination.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/WNBxXoa)  
- 
+<br/>
+<br/>
 **Conversión entre Grados y Radianes**  
 Se utiliza la clase Cesium.Math para realizar conversiones entre grados y radianes, así como otras operaciones matemáticas.  
   * De grados a radianes | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Math.html?classFilter=math#.toRadians)  
@@ -81,8 +81,6 @@ Se utiliza la clase Cesium.Math para realizar conversiones entre grados y radian
   * **GeographicProjection | EPSG:3857**.  Convierte las coordenadas geográficas en pares de coordenadas planas X e Y en metros, capacidad para representar grandes áreas con precisión pero puede introducir distorsiones en áreas cercanas a los polos.  
     [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/GeographicProjection.html)
 
-    
-    <br/>
    ```JavaScript
    import { Viewer, WebMercatorProjection } from 'cesium';
    const viewer = new Viewer("cesiumContainer", mapProjection: new WebMercatorProjection());
