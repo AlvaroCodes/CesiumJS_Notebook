@@ -161,7 +161,7 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)
 </details> 
 
-### 3.3.2. 🌌 Atmósfera (atmosphere).
+### 3.3.2. 🌌 Atmósfera (atmosphere)
 Proporciona una representación realista de la atmósfera del cielo, incluyendo efectos como la dispersión de la luz y la iluminación atmosférica.
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/SkyAtmosphere.html?classFilter=skyAtmosphere)  
