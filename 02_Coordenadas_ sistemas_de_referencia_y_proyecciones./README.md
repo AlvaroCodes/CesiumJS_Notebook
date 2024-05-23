@@ -46,7 +46,12 @@ Par de valores numéricos que representan la ubicación de un punto en la superf
   // 📘 Doc: https://cesium.com/learn/cesiumjs/ref-doc/Ellipsoid.html?classFilter=Ellipsoid#cartesianToCartographic
   ```
 
- ▶️ Transformaciones de Coordenadas: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./examples/01_transformCoord.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/MWdeEZP)
+ ▶️ Transformaciones de Coordenadas: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./examples/01_transformCoord.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/MWdeEZP)  
+
+### 📐 Grados (Degrees) y Radianes (Radians).
+* **Grados (Degrees):** Se utilizan para representar latitud y longitud (uso más común).
+* **Radianes (Radians):** Unidad estándar para medir ángulos (cálculo matemáticos precisos).
+
 
 ## 2.2. 🗺️ Proyecciones y Sistema de referencia
   * **WebMercatorProjection | EPSG:4326**. Esta proyección es el estándar para representar coordenadas geográficas (latitud y longitud), es una proyección cilíndrica, tiene la capacidad para representar áreas extensas de la Tierra con distorsión mínima.   
