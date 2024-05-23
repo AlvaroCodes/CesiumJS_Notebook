@@ -62,7 +62,7 @@ const positionRadians = new Cesium.Cartographic(longitudeRadians, latitudeRadian
 
  ▶️ radiansDestination: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./examples/02_radiansDestination.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/WNBxXoa)  
  
-* **Conversión entre Grados y Radianes**  
+**Conversión entre Grados y Radianes**  
 Se utiliza la clase Cesium.Math para realizar conversiones entre grados y radianes, así como otras operaciones matemáticas.  
   * De grados a radianes | [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Math.html?classFilter=math#.toRadians)  
     ```javascript
