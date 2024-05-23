@@ -8,7 +8,8 @@
   - [1.2.2. Entornos de Desarrollo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/01_Introducci%C3%B3n_a_CesiumJS/README.md#122-entornos-de-desarrollo)
 ## 2. Coordenadas, sistemas de referencia y proyecciones
 - [2.1. 🧭 Coordenadas](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#21--coordenadas)
-  - [2.1.1. 🔄 Transformaciones de Coordenadas](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#211--transformaciones-de-coordenadas) 
+  - [2.1.1. 🔄 Transformaciones de Coordenadas](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#211--transformaciones-de-coordenadas)
+  - [2.1.2. 📐 Grados (Degrees) y Radianes (Radians)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#212--grados-degrees-y-radianes-radians)
 - [2.2. 🗺️ Proyecciones y Sistema de referencia](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#21--coordenadas)
   - [2.2.1. 🔵 Dimensiones Geoespaciales (Rectangle y Ellipsoid)](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/02_Coordenadas_%20sistemas_de_referencia_y_proyecciones./README.md#221--dimensiones-geoespaciales-rectangle-y-ellipsoid)   
 ## 3. Vista, camara y escena
