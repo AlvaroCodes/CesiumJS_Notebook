@@ -132,7 +132,7 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
     scene.skyAtmosphere.show = false;
   ```
   
-  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#cartographicLimitRectangle)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/08_cartographicLimitRectangle.html)
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#cartographicLimitRectangle)  || [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/08_cartographicLimitRectangle.html)   || 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/qBGqVRW)
 </details> 
 
 <details>
@@ -158,7 +158,7 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
     viewer.scene.globe.clippingPlanes = clippingPlanes;
   ```
   
-  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📂 Ejemplo](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)
+  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)  || 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/GRaNyoQ)
 </details> 
 
 ### 3.3.2. 🌌 Atmósfera (atmosphere)
