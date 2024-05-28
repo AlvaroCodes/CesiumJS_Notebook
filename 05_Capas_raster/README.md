@@ -123,7 +123,9 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 
 <details>
   <summary>rectangle ➡️ "MaxExtent"</summary>
-  Restringe la visualización a una región específica.
+  
+  Restringe la visualización a una región específica.  
+  
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#rectangle)
 
 ```javascript
