@@ -174,6 +174,6 @@ Gestiona la interacción del usuario con la cámara a través de dispositivos de
 [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/ScreenSpaceCameraController.html)
 
 **Ejemplos:**  
-▶️ MinZoom y MaxZoom: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/11_minMaxZooms.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/PovbOLE)
-
+▶️ MinZoom y MaxZoom: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/11_minMaxZooms.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/PovbOLE)  
+▶️ Ejemplo Cesium - Camera Tutorial: 🚀[sandcastle Cesium](https://sandcastle.cesium.com/?src=Camera%20Tutorial.html)  
 
