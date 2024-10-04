@@ -64,6 +64,20 @@ cesiumMap.camera.setView({
 
 </details>
 
+<details>
+  <summary>🎯 Centrar el mapa (center)</summary>
+
+```javascript
+// setCenter
+cesiumMap.camera.setView({
+  destination: Cartesian3.fromDegrees(center.x, center.y, height),
+});
+```
+
+</details>
+
+
+
 ---
 
 **Ejemplos Cesium:**    
