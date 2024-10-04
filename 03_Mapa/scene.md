@@ -1,9 +1,9 @@
-## 3.3. ⛰️ Escena (Scene):
+# ⛰️ Escena (Scene):
 Es el lienzo en el que se renderizan todos los elementos gráficos, como el globo terrestre, los modelos 3D, ...  
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene)
 
-### 3.3.1. 🌎 El globo (globe) 
+## 🌎 El globo (globe) 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)  
 
 
@@ -63,7 +63,7 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
     
 </details>
 
-### 3.3.2. 🌌 Atmósfera (atmosphere)
+## 🌌 Atmósfera (atmosphere)
 Proporciona una representación realista de la atmósfera del cielo, incluyendo efectos como la dispersión de la luz y la iluminación atmosférica.
 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/SkyAtmosphere.html?classFilter=skyAtmosphere)  
