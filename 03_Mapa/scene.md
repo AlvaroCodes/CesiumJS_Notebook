@@ -70,8 +70,9 @@ Proporciona una representación realista de la atmósfera del cielo, incluyendo 
 
 ▶️ Ejemplo Cesium - Atmosphere: 🚀[sandcastle Cesium](https://sandcastle.cesium.com/?src=Atmosphere.html)  
 
-### 3.3.3. 🖱️ screenSpaceCameraController
-Gestiona la interacción del usuario con la cámara a través de dispositivos de entrada como el mouse y el teclado.
+## 🖱️ Control cámara (periféricos de entrada). 
+
+**screenSpaceCameraController**: Gestiona la interacción del usuario con la cámara a través de dispositivos de entrada como el mouse y el teclado.
 
 [📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/ScreenSpaceCameraController.html)
 
