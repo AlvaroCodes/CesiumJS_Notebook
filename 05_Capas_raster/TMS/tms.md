@@ -3,16 +3,19 @@
 <details>
   <summary>ℹ️ ¿Qué es un TMS?</summary>
 
-    Un TMS es un servicio de mapas que proporciona mapas como mosaicos (tiles). El mapa se divide en pequeñas imágenes o "cuadrículas" (tiles) que se cargan individualmente para mejorar la velocidad de visualización en la web. Estas imágenes se obtienen en función de un esquema predefinido de niveles de zoom, coordenadas y tiles.
+Un TMS es un servicio de mapas que proporciona mapas como mosaicos (tiles). El mapa se divide en pequeñas imágenes o "cuadrículas" (tiles) que se cargan individualmente para mejorar la velocidad de visualización en la web.  
+
+Estas imágenes se obtienen en función de un esquema predefinido de niveles de zoom, coordenadas y tiles.
+    
 </details>
 
 ## ImageryLayer  
 
-Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider, options))```.  
 [📘 Documentación ImageryLayer CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLaye)  
 
+Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider, options))```.  
 
-Parámetros de la capa:  
+**Parámetros de la capa:**  
 <details>
   <summary>minimumTerrainLevel y maximumTerrainLevel</summary>
 
@@ -97,7 +100,7 @@ const tmsProvider = new Cesium.TileMapServiceImageryProvider({
 });
 ```
 
-TileMapServiceImageryProvider contiene los siguientes parámetros:
+**TileMapServiceImageryProvider contiene los siguientes parámetros:**
 
 <details>
   <summary>URL</summary>
@@ -115,7 +118,7 @@ return url
 </details>
 
 <details>
-  <summary>tileWidth y tileHeight ➡️ "TileSize"</summary>
+  <summary>tileWidth y tileHeight</summary>
 
 🧭 "TileSize Openlayers" ➡️ tileWidth y tileHeight.
 
