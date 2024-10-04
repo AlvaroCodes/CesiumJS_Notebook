@@ -22,17 +22,17 @@ Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider,
 <details>
   <summary>minimumTerrainLevel y maximumTerrainLevel</summary>
 
-    - minimumTerrainLevel: El nivel mínimo de detalle del terreno en el que se mostrará esta capa de imágenes, o indefinido para mostrarla en todos los niveles. 
-    - maximumTerrainLevel: El nivel máximo de detalle del terreno en el que se mostrará esta capa de imágenes, o indefinido para mostrarla en todos los niveles.
+- minimumTerrainLevel: El nivel mínimo de detalle del terreno en el que se mostrará esta capa de imágenes, o indefinido para mostrarla en todos los niveles. 
+- maximumTerrainLevel: El nivel máximo de detalle del terreno en el que se mostrará esta capa de imágenes, o indefinido para mostrarla en todos los niveles.
 
 </details>
 
 <details>
   <summary>rectangle</summary>
-
+  
+Restringe la visualización a una región específica.  
+   
 🧭 "MaxExtent en Openlayers"
-
-Restringe la visualización a una región específica. 
 
 [📘 Documentación rectangle CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#rectangle)
 
@@ -72,8 +72,9 @@ viewer.imageryLayers.add(tms);
 </details>  
 
 <details>
-  <summary>Show</summary>
-Determina si se muestra o no la capa.
+  <summary>Show</summary> 
+  
+Determina si se muestra o no la capa.  
 
 🧭 "Visibility en Openlayers"
   
@@ -124,9 +125,9 @@ return url
 <details>
   <summary>tileWidth y tileHeight</summary>
 
-🧭 "TileSize en Openlayers"
+Tamaño de la tesela, por defecto los valores son 256.  
 
-Tamaño de la tesela, por defecto los valores son 256.
+🧭 "TileSize en Openlayers"
 
 [📘 Documentación tileHeight](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#tileWidth)  
 
@@ -148,9 +149,9 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 <details> 
   <summary>maximumLevel y minimumLevel</summary>
 
-🧭 "TileGridMaxZoom y TileGridMinZoom en Openlayers"
+ Zoom máximo y mínimo de la tesela en forma de rejilla.  
 
- Zoom máximo y mínimo de la tesela en forma de rejilla. 
+ 🧭 "TileGridMaxZoom y TileGridMinZoom en Openlayers"
 
 [📘 Documentación maximumLevel](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=TileMapServiceImageryProvider#maximumLevel)  
 
