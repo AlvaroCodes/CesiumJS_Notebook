@@ -1,12 +1,26 @@
-# ⛰️ Escena (Scene):
+# ⛰️ Escena (Scene):  
+
+[📘 Documentación Scene CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene)
+
 Es el lienzo en el que se renderizan todos los elementos gráficos, como el globo terrestre, los modelos 3D, ...  
 
-[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Scene.html?classFilter=scene)
+<details>
+  <summary>🖱️ Control de la escena (periféricos de entrada). </summary>
+
+  
+**screenSpaceCameraController**: Gestiona la interacción del usuario con la cámara a través de dispositivos de entrada como el mouse y el teclado.
+
+[📘 Documentación screenSpaceCameraController CESIUM](https://cesium.com/learn/ion-sdk/ref-doc/ScreenSpaceCameraController.html)
+
+**Ejemplos:**  
+▶️ MinZoom y MaxZoom: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/11_minMaxZooms.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/PovbOLE)  
+▶️ Ejemplo Cesium - Camera Tutorial: 🚀[sandcastle Cesium](https://sandcastle.cesium.com/?src=Camera%20Tutorial.html)  
+  
+</details>
 
 ## 🌎 El globo (globe) 
-[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)  
 
-
+[📘 Documentación screenSpaceCameraController CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)  
 
 **Opciones del globo**
 
@@ -32,8 +46,7 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
     globe.cartographicLimitRectangle = spainRectangle;
     scene.skyAtmosphere.show = false;
   ```
-  
-  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#cartographicLimitRectangle)  || [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/08_cartographicLimitRectangle.html)   || 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/qBGqVRW)
+  [📘 Documentación cartographicLimitRectangle CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#cartographicLimitRectangle)  || [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/08_cartographicLimitRectangle.html)   || 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/qBGqVRW)
 
 
 **Usando clippingPlanes**  
@@ -58,25 +71,16 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
     // Aplicar los clipping planes al globo
     viewer.scene.globe.clippingPlanes = clippingPlanes;
   ```
-  
-  [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)  || 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/GRaNyoQ)
+[📘 Documentación clippingPlanes CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)  || 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/GRaNyoQ)
     
 </details>
 
-## 🌌 Atmósfera (atmosphere)
-Proporciona una representación realista de la atmósfera del cielo, incluyendo efectos como la dispersión de la luz y la iluminación atmosférica.
+## 🌌 Atmósfera (atmosphere)  
 
-[📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/SkyAtmosphere.html?classFilter=skyAtmosphere)  
+[📘 Documentación atmosphere CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/SkyAtmosphere.html?classFilter=skyAtmosphere)  
+
+Proporciona una representación realista de la atmósfera del cielo, incluyendo efectos como la dispersión de la luz y la iluminación atmosférica.
 
 ▶️ Ejemplo Cesium - Atmosphere: 🚀[sandcastle Cesium](https://sandcastle.cesium.com/?src=Atmosphere.html)  
 
-## 🖱️ Control cámara (periféricos de entrada). 
-
-**screenSpaceCameraController**: Gestiona la interacción del usuario con la cámara a través de dispositivos de entrada como el mouse y el teclado.
-
-[📘 Doc](https://cesium.com/learn/ion-sdk/ref-doc/ScreenSpaceCameraController.html)
-
-**Ejemplos:**  
-▶️ MinZoom y MaxZoom: [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/11_minMaxZooms.html)  | 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/PovbOLE)  
-▶️ Ejemplo Cesium - Camera Tutorial: 🚀[sandcastle Cesium](https://sandcastle.cesium.com/?src=Camera%20Tutorial.html)  
 
