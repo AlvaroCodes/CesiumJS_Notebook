@@ -6,9 +6,15 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
 ### 3.3.1. 🌎 El globo (globe) 
 [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html)  
 
-**Opciones del globo - Límitar extensión**
+
+
+**Opciones del globo**
+
 <details>
-  <summary>cartographicLimitRectangle</summary>
+  <summary>🖼️ Límitar extensión (maxExtent / viewExtent)</summary>
+  
+**Usando cartographicLimitRectangle**  
+
   Recorta el globo a una zona concreta, por defecto ```Rectangle.MAX_VALUE```.
 
   ```javascript
@@ -28,10 +34,10 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
   ```
   
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#cartographicLimitRectangle)  || [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/08_cartographicLimitRectangle.html)   || 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/qBGqVRW)
-</details> 
 
-<details>
-  <summary>clippingPlanes</summary>
+
+**Usando clippingPlanes**  
+
   Delimita la representación del plano ("recorta").
 
   ```javascript
@@ -54,7 +60,8 @@ Es el lienzo en el que se renderizan todos los elementos gráficos, como el glob
   ```
   
   [📘 Doc](https://cesium.com/learn/cesiumjs/ref-doc/Globe.html#clippingPlanes)  || [📋 HTML](https://github.com/AlvaroCodes/cesiumJS_notebook/blob/main/03_Vista_camara_y_escena/examples/07_clippingPlane.html)  || 🚀[CodePen](https://codepen.io/AlvaroCodes/pen/GRaNyoQ)
-</details> 
+    
+</details>
 
 ### 3.3.2. 🌌 Atmósfera (atmosphere)
 Proporciona una representación realista de la atmósfera del cielo, incluyendo efectos como la dispersión de la luz y la iluminación atmosférica.
