@@ -1,11 +1,9 @@
-# TMS
+# XYZ
 
 <details>
-  <summary>ℹ️ ¿Qué es un TMS?</summary>
+  <summary>ℹ️ ¿Qué es una XYZ?</summary>
 
-Un TMS es un servicio de mapas que proporciona mapas como mosaicos (tiles). El mapa se divide en pequeñas imágenes o "cuadrículas" (tiles) que se cargan individualmente para mejorar la velocidad de visualización en la web.  
-
-Estas imágenes se obtienen en función de un esquema predefinido de niveles de zoom, coordenadas y tiles.
+Una XYZ es un tipo de servicio de mapas en la web que proporciona mosaicos (tiles) como imágenes raster organizadas en un esquema de cuadrículas. Cada mosaico tiene una dirección (X, Y) que indica su posición en el nivel de zoom (Z) específico.
     
 </details>
 
@@ -19,9 +17,9 @@ Para añadir y eliminar una capa:
 
 ```javascript
 // Añadir
-viewer.imageryLayers.add(tms);
+viewer.imageryLayers.add(xyz);
 // Eliminar
-viewer.imageryLayers.remove(tms);
+viewer.imageryLayers.remove(xyz);
 ```
 
 **Parámetros de la capa:**  
@@ -38,22 +36,22 @@ viewer.imageryLayers.remove(tms);
 
 <details>
   <summary>rectangle</summary>
-  
-Restringe la visualización a una región específica.  
-   
+
 🧭 "MaxExtent en Openlayers"
 
-[📘 Documentación rectangle CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#rectangle)
+Restringe la visualización a una región específica. 
+
+[📘 Documentación rectangle CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#rectangle)
 
 ```javascript
-const tms = new Cesium.ImageryLayer(
-    TileMapServiceImageryProvider,
+const xyz = new Cesium.ImageryLayer(
+    UrlTemplateImageryProvider,
     {
       rectangle : Cesium.Rectangle.fromDegrees(96.799393, -43.598214999057824, 153.63925700000001, -9.2159219997013),
     }
 );
 
-viewer.imageryLayers.add(tms);
+viewer.imageryLayers.add(xyz);
 ```
 
 </details>
@@ -68,53 +66,52 @@ Valor Alpha, se puede utilizar para dar opacidad a la capa. Valor por defecto 1.
  [📘 Documentación alpha CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer#alpha)
   
 ```javascript
-const tms = new Cesium.ImageryLayer(
-    TileMapServiceImageryProvider,
+const xyz = new Cesium.ImageryLayer(
+    UrlTemplateImageryProvider,
     {
       alpha: 0.5,
     }
 );
 
-viewer.imageryLayers.add(tms);
+viewer.imageryLayers.add(xyz);
 ```  
 
 </details>  
 
 <details>
-  <summary>Show</summary> 
-
-Determina si se muestra o no la capa.  
+  <summary>Show</summary>
+Determina si se muestra o no la capa.
 
 🧭 "Visibility en Openlayers"
   
  [📘 Documentación show CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer#show)
   
 ```javascript
-const tms = new Cesium.ImageryLayer(
-    TileMapServiceImageryProvider,
+const xyz = new Cesium.ImageryLayer(
+    UrlTemplateImageryProvider,
     {
       show: false,
     }
 );
 
-viewer.imageryLayers.add(tms);
+viewer.imageryLayers.add(xyz);
 ```  
 </details> 
 
 
-## TileMapServiceImageryProvider
+## UrlTemplateImageryProvider
 
-[📘 Documentación TileMapServiceImageryProvider CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=TileMapServiceImageryProvider)
+[📘 Documentación UrlTemplateImageryProvider CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider)
 
-Se utiliza para cargar imágenes de teselas desde un servidor con la especificicación TMS.
+Se utiliza para cargar imágenes de teselas desde un servidor con la especificicación XYZ.
 
 ```javascript
-const tmsProvider = new Cesium.TileMapServiceImageryProvider({
-    url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
+const xyzProvider = new Cesium.UrlTemplateImageryProvider({
+    url: 'https://www.ign.es/web/catalogo-cartoteca/resources/webmaps/data/cresques/{z}/{x}/{y}.jpg',
 });
 ```
 
-**TileMapServiceImageryProvider contiene los siguientes parámetros:**
+**UrlTemplateImageryProvider contiene los siguientes parámetros:**
 
 <details>
   <summary>URL</summary>
@@ -134,18 +131,18 @@ return url
 <details>
   <summary>tileWidth y tileHeight</summary>
 
-Tamaño de la tesela, por defecto los valores son 256.  
-
 🧭 "TileSize en Openlayers"
 
-[📘 Documentación tileWidth](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#tileWidth)  
+Tamaño de la tesela, por defecto los valores son 256.
 
-[📘 Documentación tileHeight](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=tilemaps#tileHeight)
+[📘 Documentación tileWidth](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#tileWidth)  
+
+[📘 Documentación tileHeight](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#tileHeight)
 
 
 ```javascript
-const osmProvider = new Cesium.TileMapServiceImageryProvider({
-   url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'https://www.ign.es/web/catalogo-cartoteca/resources/webmaps/data/cresques/{z}/{x}/{y}.jpg',
    tileWidth: 256,
    tileHeight: 256
 });
@@ -158,17 +155,17 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 <details> 
   <summary>maximumLevel y minimumLevel</summary>
 
+🧭 "TileGridMaxZoom y TileGridMinZoom en Openlayers"
+
  Zoom máximo y mínimo de la tesela en forma de rejilla. 
 
- 🧭 "TileGridMaxZoom y TileGridMinZoom en Openlayers"
+[📘 Documentación maximumLevel](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#maximumLevel)  
 
-[📘 Documentación maximumLevel](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=TileMapServiceImageryProvider#maximumLevel)  
-
-[📘 Documentación minimumLevel](https://cesium.com/learn/cesiumjs/ref-doc/TileMapServiceImageryProvider.html?classFilter=TileMapServiceImageryProvider#maximumLevel)  
+[📘 Documentación minimumLevel](https://cesium.com/learn/cesiumjs/ref-doc/UrlTemplateImageryProvider.html?classFilter=UrlTemplateImageryProvider#minimumLevel)  
 
 ```javascript
-const osmProvider = new Cesium.TileMapServiceImageryProvider({
-   url: 'https://tms-ign-base.idee.es/1.0.0/IGNBaseTodo/{z}/{x}/{reverseY}.jpeg',
+const osmProvider = new Cesium.UrlTemplateImageryProvider({
+   url: 'https://www.ign.es/web/catalogo-cartoteca/resources/webmaps/data/cresques/{z}/{x}/{y}.jpg',
    maximumLevel:  17, // especifica el nivel máximo creado en el servicio para permitir hacer "overzoom"
 });
 
@@ -180,16 +177,16 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 ## Proxy (Resource)
 
 <details>
-  <summary>ℹ️ Uso del Proxy en las TMS</summary>
+  <summary>ℹ️ Uso del Proxy en las XYZ</summary>
 
-Debido a que la [política del mismo origen](https://en.wikipedia.org/wiki/Same-origin_policy) no restringe las solicitudes de imágenes, en general, un TMS no tendrá problemas con la política del mismo origen para cargar mosaicos desde dominios diferentes (no se hacen solicitudes complejas que devuelvan XML, GML u otros tipos de datos estructurados).
+Debido a que la [política del mismo origen](https://en.wikipedia.org/wiki/Same-origin_policy) no restringe las solicitudes de imágenes, en general, un XYZ no tendrá problemas con la política del mismo origen para cargar mosaicos desde dominios diferentes (no se hacen solicitudes complejas que devuelvan XML, GML u otros tipos de datos estructurados).
 
-En TMS, estás solicitando principalmente mosaicos que son imágenes raster (archivos PNG, JPEG, etc.), lo cual no suele estar restringido por la política del mismo origen. 
+En XYZ, estás solicitando principalmente mosaicos que son imágenes raster (archivos PNG, JPEG, etc.), lo cual no suele estar restringido por la política del mismo origen. 
 
-Cuando puede ser necesario un proxy en TMS: 
+Cuando puede ser necesario un proxy en XYZ: 
 
-- Control de acceso: Si los mosaicos contienen información sensible o si el servicio TMS está restringido para ciertos usuarios.
-- Distribución de carga: Si se está sirviendo un gran volumen de mosaicos y se quiere evitar que los usuarios accedan directamente al servidor TMS, se puede usar un proxy para distribuir las solicitudes o cachéar los mosaicos para mejorar el rendimiento. 
+- Control de acceso: Si los mosaicos contienen información sensible o si el servicio XYZ está restringido para ciertos usuarios.
+- Distribución de carga: Si se está sirviendo un gran volumen de mosaicos y se quiere evitar que los usuarios accedan directamente al servidor XYZ, se puede usar un proxy para distribuir las solicitudes o cachéar los mosaicos para mejorar el rendimiento. 
 
 </details>
 
@@ -209,10 +206,10 @@ const url = new Resource({
     proxy: new DefaultProxy('/proxyPost?url='),
 });
 
-const tile = new TileMapServiceImageryProvider({ url });
+const tile = new UrlTemplateImageryProvider({ url });
 ```
 
-## Manejo de Capas TMS
+## Manejo de Capas XYZ
 
 - Funcionamiento de las capas Base en cesium:
   - Si no existe otra capa base, se pondrá la primera que se cargue.
