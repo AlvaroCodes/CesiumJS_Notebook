@@ -16,6 +16,9 @@ Estas imágenes se obtienen en función de un esquema predefinido de niveles de 
 Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider, options))```.  
 
 **Parámetros de la capa:**  
+
+![Parámetros de la capa](../ImageryLayer_Properties.png)
+
 <details>
   <summary>minimumTerrainLevel y maximumTerrainLevel</summary>
 
