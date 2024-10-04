@@ -26,7 +26,7 @@ Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider,
 <details>
   <summary>rectangle</summary>
 
-🧭 "MaxExtent Openlayers" ➡️ rectangle.
+🧭 "MaxExtent en Openlayers"
 
 Restringe la visualización a una región específica. 
 
@@ -50,7 +50,7 @@ viewer.imageryLayers.add(tms);
 
 Valor Alpha, se puede utilizar para dar opacidad a la capa. Valor por defecto 1.0.  
   
-🧭 "Opacity Openlayers" ➡️ Alpha.
+🧭 "Opacity en Openlayers"
 
  [📘 Documentación alpha CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer#alpha)
   
@@ -71,7 +71,7 @@ viewer.imageryLayers.add(tms);
   <summary>Show</summary>
 Determina si se muestra o no la capa.
 
-🧭 "Visibility Openlayers" ➡️ Show.
+🧭 "Visibility en Openlayers"
   
  [📘 Documentación show CESIUM](https://cesium.com/learn/cesiumjs/ref-doc/ImageryLayer.html?classFilter=ImageryLayer#show)
   
@@ -120,7 +120,7 @@ return url
 <details>
   <summary>tileWidth y tileHeight</summary>
 
-🧭 "TileSize Openlayers" ➡️ tileWidth y tileHeight.
+🧭 "TileSize en Openlayers"
 
 Tamaño de la tesela, por defecto los valores son 256.
 
@@ -144,7 +144,7 @@ viewer.imageryLayers.addImageryProvider(osmProvider);
 <details> 
   <summary>maximumLevel y minimumLevel</summary>
 
-🧭 "TileGridMaxZoom y TileGridMinZoom Openlayers" ➡️ maximumLevel y minimumLevel.
+🧭 "TileGridMaxZoom y TileGridMinZoom en Openlayers"
 
  Zoom máximo y mínimo de la tesela en forma de rejilla. 
 
