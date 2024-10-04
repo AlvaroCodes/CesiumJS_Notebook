@@ -19,7 +19,8 @@ Capa Rástes que recibe un provedor ```(new Cesium.ImageryLayer(imageryProvider,
 <details>
   <summary>minimumTerrainLevel y maximumTerrainLevel</summary>
 
-    xxx
+    - minimumTerrainLevel: El nivel mínimo de detalle del terreno en el que se mostrará esta capa de imágenes, o indefinido para mostrarla en todos los niveles. 
+    - maximumTerrainLevel: El nivel máximo de detalle del terreno en el que se mostrará esta capa de imágenes, o indefinido para mostrarla en todos los niveles.
 
 </details>
 
