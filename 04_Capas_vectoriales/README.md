@@ -1,6 +1,14 @@
 # Entity
 
+Las entities proporcionan una abstracción de alto nivel que facilita la creación y manipulación de objetos en CesiumJS. Utilizan MaterialProperty para definir materiales que pueden variar con el tiempo.
+
 ## Estílos / Materiales
+Un material define cómo se renderiza la superficie o geometría de una entidad.  
+ 
+**MaterialProperty** es una clase base abstracta que representa una propiedad de material para una entidad, es la clase padre para todas las propiedades de materiales.
+
+**CompositeMaterialProperty** es una clase que permite combinar múltiples MaterialProperty en una sola propiedad que cambia en función del tiempo. 
+
 ### Genéricos
 
 <details>
